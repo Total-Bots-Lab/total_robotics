@@ -5,8 +5,6 @@ Created on Sat May 17 01:17:08 2025
 @author: ritwik
 """
 
-
-
 'Import Genesis and OS'
 import genesis as gs
 import os
