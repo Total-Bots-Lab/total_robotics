@@ -9,7 +9,7 @@ import gymnasium as gym
 import genesis as gs
 
 'The main Env'
-class Go2GenesisEnv(gym.Env):
+class Go2_Sim_Genesis(gym.Env):
     def __init__(self):
         super().__init__()
         
@@ -22,7 +22,7 @@ class Go2GenesisEnv(gym.Env):
         self.scene.add_entity(gs.morphs.Plane())
 
         'Integrate the Go2 Robot xml.'
-        self.robot = gs.morphs.MJCF(file="xml/unitree_go2/go2.xml")
+        self.robot = gs.morphs.MJCF(file="xml/Unitree_Go2/go2.xml")
         'Add an entity to the scene.'
         self.scene.add_entity(self.robot)
         'Builds the scene.'
@@ -36,6 +36,8 @@ class Go2GenesisEnv(gym.Env):
 
 
     def reset(self):
+        
+        print('Resetting the Env...')
         'Reload the scene to reset everything (Optional).'
         self.scene.reset()
         
@@ -62,15 +64,3 @@ class Go2GenesisEnv(gym.Env):
 
     def close(self):
         gs.destroy()
-
-
-
-env = Go2GenesisEnv()
-
-obs = env.reset()
-for _ in range(100):
-    action = env.action_space.sample()
-    obs, reward, done, info = env.step(action)
-    if done:
-        break
-env.close()
