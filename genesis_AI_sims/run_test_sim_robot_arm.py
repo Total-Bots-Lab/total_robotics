@@ -26,7 +26,9 @@ scene.build()
 
 'Setting up 5 simulation episodes'
 for episode in range(5):
-    print('Episode: ', episode)     # Print Episode Number
+    print('Starting Episode: ', episode)     # Print Episode Number
+    
+    scene.reset()
     
     'Run 100 time steps in each episode'
     for _ in range(100):
