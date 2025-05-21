@@ -29,48 +29,43 @@ class Go2_Genesis_Env(gym.Env):
                                                                 ),
                               show_FPS=False)
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         'Adds a flat ground plane to the scene.'
         self.plane = self.scene.add_entity(gs.morphs.Plane())
-
-
 
         'Integrate the Go2 Robot xml.'
         self.robot = gs.morphs.MJCF(file="xml/Unitree_Go2/go2.xml")
         'Add an entity to the scene.'
         self.Go2 = self.scene.add_entity(self.robot)
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         'Builds the scene.'
         self.scene.build()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         'Define the Action Space.'
         self.action_space = action_space
         self.action_low = lower_limit_actions
         self.action_high = upper_limit_actions
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         'Define the Observation Space.'
         self.observation_space = gym.spaces.Discrete(1)

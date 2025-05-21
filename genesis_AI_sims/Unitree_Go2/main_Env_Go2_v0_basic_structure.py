@@ -28,14 +28,16 @@ class Go2_Genesis_Env(gym.Env):
         'Integrate the Go2 Robot xml.'
         self.robot = gs.morphs.MJCF(file="xml/Unitree_Go2/go2.xml")
         'Add an entity to the scene.'
-        self.scene.add_entity(self.robot)
+        self.Go2 = self.scene.add_entity(self.robot)
         'Builds the scene.'
         self.scene.build()
         
         'Define the Observation Space.'
+        'Defining an arbitrary  Action Space for now.'
         self.action_space = gym.spaces.Discrete(1)
         
         'Define the Action Space.'
+        'Defining an arbitrary Observation Space for now.'
         self.observation_space = gym.spaces.Discrete(1)
 
 
