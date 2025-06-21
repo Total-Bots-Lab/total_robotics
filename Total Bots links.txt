@@ -1,0 +1,9 @@
+Genesis git repo link -> https://github.com/Genesis-Embodied-AI/Genesis
+
+
+Total-Bots link
+
+Github link -> https://github.com/Total-Bots-Lab/total_robotics/tree/main/genesis_AI_sims
+
+
+https://github.com/goncalog/ai-robotics/blob/main/tutorials/foot_tricks.ipynb
