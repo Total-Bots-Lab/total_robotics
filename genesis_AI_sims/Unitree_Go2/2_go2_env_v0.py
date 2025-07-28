@@ -7,24 +7,57 @@ Created on Sat May 17 15:42:21 2025
 
 import gymnasium as gym
 #import genesis as gs
-from libraries.genesis_setup import Genesis_Simulator 
+from libraries.genesis_setup import Genesis_Simulator
+
+
+from libraries.setting_up_the_control_system import setting_up_the_control_system
 
 'The main Env'
 class Go2_Genesis_Env(gym.Env):
-    def __init__(self):
+    def __init__(self, env_config):
         super().__init__()        
         
-        'Genesis setup'
-        Genesis_Simulator(self)
+        
+        'Setting up the Physics Engine'
+        self.physics_engine = env_config['physics_engine']
+        if (self.physics_engine == 'genesis'):
+            'Genesis setup'
+            Genesis_Simulator(self)
+            
+            
+            
+            
+            
+        setting_up_the_control_system(self)
     
         
         'Define the Observation Space.'
         'Defining an arbitrary  Action Space for now.'
         self.action_space = gym.spaces.Discrete(1)
         
+        
+        
+        
+        
+        
+        
+        
+        
         'Define the Action Space.'
         'Defining an arbitrary Observation Space for now.'
         self.observation_space = gym.spaces.Discrete(1)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     def reset(self, *, seed=None, options=None):       # Need to study the seed part in details

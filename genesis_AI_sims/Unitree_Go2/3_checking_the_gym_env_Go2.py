@@ -13,7 +13,10 @@ import os
 
 'Registering and Calling the Gym Environment'
 gym.register(id='Go2_Genesis_Env', entry_point='2_go2_env_v0:Go2_Genesis_Env')
-env = gym.make('Go2_Genesis_Env') 
+env = gym.make('Go2_Genesis_Env',
+               env_config={'physics_engine':'genesis'}
+               ) 
+
 
 'Number of Episodes'
 episodes = 10
