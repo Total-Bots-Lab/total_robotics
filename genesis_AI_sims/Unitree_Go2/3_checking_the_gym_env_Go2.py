@@ -12,8 +12,11 @@ import os
 
 
 'Registering and Calling the Gym Environment'
-gym.register(id='Go2_Genesis_Env', entry_point='main_Env_Go2_v0_basic_structure:Go2_Genesis_Env')
-env = gym.make('Go2_Genesis_Env') 
+gym.register(id='Go2_Genesis_Env', entry_point='2_go2_env_v0:Go2_Genesis_Env')
+env = gym.make('Go2_Genesis_Env',
+               env_config={'physics_engine':'genesis'}
+               ) 
+
 
 'Number of Episodes'
 episodes = 10
@@ -25,7 +28,7 @@ for episode in range(episodes):
     'Starting countdown to measure the time taken for one episode'
     start = time.time()
     done = False
-    obs = env.reset()
+    obs, info = env.reset()
     print('\nObservation after Reset:', obs)
     total_reward = 0
     score = 0
