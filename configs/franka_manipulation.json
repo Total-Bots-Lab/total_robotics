@@ -1,0 +1,129 @@
+{
+  "robot": {
+    "name": "franka_panda",
+    "robot_type": "builtin",
+    "robot_source": "franka",
+    "urdf_path": "urdf/franka_panda/panda.urdf",
+    "joint_names": [
+      "panda_joint1", "panda_joint2", "panda_joint3",
+      "panda_joint4", "panda_joint5", "panda_joint6", "panda_joint7"
+    ],
+    "default_joint_angles": {
+      "panda_joint1": 0.0, "panda_joint2": -0.785, "panda_joint3": 0.0,
+      "panda_joint4": -2.356, "panda_joint5": 0.0, "panda_joint6": 1.571, "panda_joint7": 0.785
+    },
+    "num_actions": 7,
+    "base_init_pos": [0.0, 0.0, 0.0],
+    "base_init_quat": [1.0, 0.0, 0.0, 0.0],
+    "base_init_lin_vel": [0.0, 0.0, 0.0],
+    "base_init_ang_vel": [0.0, 0.0, 0.0],
+    "kp": 150.0,
+    "kd": 10.0,
+    "action_scale": 0.1,
+    "clip_actions": 100.0,
+    "torque_limit": 100.0,
+    "episode_length_s": 20.0,
+    "dt": 0.02,
+    "obs_scales": {
+      "lin_vel": 2.0,
+      "ang_vel": 0.25,
+      "dof_pos": 1.0,
+      "dof_vel": 0.05
+    },
+    "termination_conditions": {
+      "max_roll_degrees": 180.0,
+      "max_pitch_degrees": 180.0,
+      "joint_limit_margin": 0.05
+    },
+    "mass_scale": 1.0,
+    "friction_coefficient": 1.0,
+    "restitution": 0.0
+  },
+  "task": {
+    "task_name": "Franka Manipulation",
+    "task_type": "manipulation",
+    "task_description": "",
+    "environment_type": "table",
+    "environment_size": [2.0, 2.0, 2.0],
+    "environment_params": {},
+    "max_episode_steps": 500,
+    "episode_timeout_seconds": 20.0,
+    "num_parallel_envs": 1,
+    "success_conditions": {},
+    "termination_conditions": {}
+  },
+  "reward": {
+    "reward_components": [],
+    "total_reward_scale": 1.0,
+    "reward_clip_min": -10.0,
+    "reward_clip_max": 10.0,
+    "use_default_locomotion": false,
+    "velocity_tracking_weight": 1.0,
+    "action_smoothness_weight": -0.01,
+    "joint_regularization_weight": -0.005,
+    "collision_penalty_weight": -1.0,
+    "use_default_manipulation": true,
+    "position_tracking_weight": 10.0,
+    "orientation_tracking_weight": 5.0,
+    "grasp_success_weight": 100.0
+  },
+  "training": {
+    "training_enabled": true,
+    "algorithm": "PPO",
+    "training_backend": "stable_baselines3",
+    "total_timesteps": 30000,
+    "max_training_hours": 1.0,
+    "save_frequency": 1000,
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.01,
+    "vf_coef": 0.5,
+    "n_epochs": 10,
+    "policy_network": [256, 256],
+    "value_network": [256, 256],
+    "activation_function": "tanh"
+  },
+  "physics": {
+    "physics_engine": "genesis",
+    "backend": "gpu",
+    "dt": 0.02,
+    "substeps": 2,
+    "gravity": [0.0, 0.0, -9.81],
+    "solver_iterations": 10,
+    "contact_stiffness": 1000000.0,
+    "contact_damping": 1000.0
+  },
+  "rendering": {
+    "enable_rendering": true,
+    "render_mode": "human",
+    "show_viewer": true,
+    "camera_position": [1.5, 1.5, 1.5],
+    "camera_target": [0.0, 0.0, 0.7],
+    "camera_fov": 40.0,
+    "record_video": false,
+    "video_fps": 30,
+    "video_resolution": [1920, 1080],
+    "show_grid": true,
+    "show_axes": false,
+    "lighting_quality": "medium"
+  },
+  "output": {
+    "log_level": "INFO",
+    "log_dir": "simulation_logs",
+    "enable_console_output": true,
+    "enable_file_output": true,
+    "save_trained_models": true,
+    "save_intermediate_models": false,
+    "model_save_format": "stable_baselines3",
+    "generate_reports": true,
+    "report_format": "json",
+    "include_performance_metrics": true,
+    "include_training_curves": true,
+    "export_firmware": false,
+    "firmware_format": "json",
+    "include_model_weights": true
+  }
+}

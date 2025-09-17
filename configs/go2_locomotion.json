@@ -1,0 +1,132 @@
+{
+  "robot": {
+    "name": "go2_quadruped",
+    "robot_type": "builtin",
+    "robot_source": "go2",
+    "urdf_path": "urdf/go2/urdf/go2.urdf",
+    "joint_names": [
+      "FR_hip_joint", "FR_thigh_joint", "FR_calf_joint",
+      "FL_hip_joint", "FL_thigh_joint", "FL_calf_joint", 
+      "RR_hip_joint", "RR_thigh_joint", "RR_calf_joint",
+      "RL_hip_joint", "RL_thigh_joint", "RL_calf_joint"
+    ],
+    "default_joint_angles": {
+      "FL_hip_joint": 0.0, "FR_hip_joint": 0.0, "RL_hip_joint": 0.0, "RR_hip_joint": 0.0,
+      "FL_thigh_joint": 0.8, "FR_thigh_joint": 0.8, "RL_thigh_joint": 1.0, "RR_thigh_joint": 1.0,
+      "FL_calf_joint": -1.5, "FR_calf_joint": -1.5, "RL_calf_joint": -1.5, "RR_calf_joint": -1.5
+    },
+    "num_actions": 12,
+    "base_init_pos": [0.0, 0.0, 0.42],
+    "base_init_quat": [1.0, 0.0, 0.0, 0.0],
+    "base_init_lin_vel": [0.0, 0.0, 0.0],
+    "base_init_ang_vel": [0.0, 0.0, 0.0],
+    "kp": 20.0,
+    "kd": 0.5,
+    "action_scale": 0.25,
+    "clip_actions": 100.0,
+    "torque_limit": 100.0,
+    "episode_length_s": 20.0,
+    "dt": 0.02,
+    "obs_scales": {
+      "lin_vel": 2.0,
+      "ang_vel": 0.25,
+      "dof_pos": 1.0,
+      "dof_vel": 0.05
+    },
+    "termination_conditions": {
+      "max_roll_degrees": 10.0,
+      "max_pitch_degrees": 10.0,
+      "joint_limit_margin": 0.1
+    },
+    "mass_scale": 1.0,
+    "friction_coefficient": 1.0,
+    "restitution": 0.0
+  },
+  "task": {
+    "task_name": "Go2 Locomotion",
+    "task_type": "locomotion",
+    "task_description": "",
+    "environment_type": "flat",
+    "environment_size": [10.0, 10.0, 2.0],
+    "environment_params": {},
+    "max_episode_steps": 1000,
+    "episode_timeout_seconds": 20.0,
+    "num_parallel_envs": 1,
+    "success_conditions": {},
+    "termination_conditions": {}
+  },
+  "reward": {
+    "reward_components": [],
+    "total_reward_scale": 1.0,
+    "reward_clip_min": -10.0,
+    "reward_clip_max": 10.0,
+    "use_default_locomotion": true,
+    "velocity_tracking_weight": 1.0,
+    "action_smoothness_weight": -0.01,
+    "joint_regularization_weight": -0.005,
+    "collision_penalty_weight": -1.0,
+    "use_default_manipulation": false,
+    "position_tracking_weight": 10.0,
+    "orientation_tracking_weight": 5.0,
+    "grasp_success_weight": 100.0
+  },
+  "training": {
+    "training_enabled": true,
+    "algorithm": "PPO",
+    "training_backend": "stable_baselines3",
+    "total_timesteps": 50000,
+    "max_training_hours": 1.0,
+    "save_frequency": 1000,
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.01,
+    "vf_coef": 0.5,
+    "n_epochs": 10,
+    "policy_network": [256, 256],
+    "value_network": [256, 256],
+    "activation_function": "tanh"
+  },
+  "physics": {
+    "physics_engine": "genesis",
+    "backend": "gpu",
+    "dt": 0.02,
+    "substeps": 2,
+    "gravity": [0.0, 0.0, -9.81],
+    "solver_iterations": 10,
+    "contact_stiffness": 1000000.0,
+    "contact_damping": 1000.0
+  },
+  "rendering": {
+    "enable_rendering": true,
+    "render_mode": "human",
+    "show_viewer": true,
+    "camera_position": [2.0, 0.0, 2.5],
+    "camera_target": [0.0, 0.0, 0.5],
+    "camera_fov": 40.0,
+    "record_video": false,
+    "video_fps": 30,
+    "video_resolution": [1920, 1080],
+    "show_grid": true,
+    "show_axes": false,
+    "lighting_quality": "medium"
+  },
+  "output": {
+    "log_level": "INFO",
+    "log_dir": "simulation_logs",
+    "enable_console_output": true,
+    "enable_file_output": true,
+    "save_trained_models": true,
+    "save_intermediate_models": false,
+    "model_save_format": "stable_baselines3",
+    "generate_reports": true,
+    "report_format": "json",
+    "include_performance_metrics": true,
+    "include_training_curves": true,
+    "export_firmware": false,
+    "firmware_format": "json",
+    "include_model_weights": true
+  }
+}

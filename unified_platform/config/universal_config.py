@@ -24,13 +24,14 @@ class UniversalRobotConfig:
     
     # Robot Identity
     name: str = "default_robot"
-    robot_type: str = "builtin"  # "builtin", "urdf", "custom"
+    robot_type: str = "builtin"  # "builtin", "urdf", "xml", "custom"
     robot_source: str = "go2"  # robot name or file path
     
     # Physical Properties
     urdf_path: Optional[str] = None
     joint_names: List[str] = field(default_factory=list)
     default_joint_angles: Dict[str, float] = field(default_factory=dict)
+    joint_pos_limits: Dict[str, tuple] = field(default_factory=dict)  # Joint position limits (min, max)
     num_actions: int = 12  # Number of controllable joints
     
     # Spawn Configuration
@@ -369,12 +370,12 @@ class RobotLibrary:
     
     @staticmethod
     def go2() -> UniversalRobotConfig:
-        """Go2 quadruped robot configuration."""
+        """Go2 quadruped robot configuration using URDF file at new location."""
         return UniversalRobotConfig(
             name="go2_quadruped",
-            robot_type="builtin",
+            robot_type="urdf",  # Switch to URDF at new location
             robot_source="go2",
-            urdf_path="urdf/go2/urdf/go2.urdf",
+            urdf_path="unified_platform/config/go2_description/urdf/go2_description.urdf",  # Updated location
             joint_names=[
                 "FR_hip_joint", "FR_thigh_joint", "FR_calf_joint",
                 "FL_hip_joint", "FL_thigh_joint", "FL_calf_joint", 
@@ -382,19 +383,37 @@ class RobotLibrary:
                 "RL_hip_joint", "RL_thigh_joint", "RL_calf_joint",
             ],
             default_joint_angles={
+                # Hip abduction joints - keep neutral
                 "FL_hip_joint": 0.0, "FR_hip_joint": 0.0, "RL_hip_joint": 0.0, "RR_hip_joint": 0.0,
-                "FL_thigh_joint": 0.8, "FR_thigh_joint": 0.8, "RL_thigh_joint": 1.0, "RR_thigh_joint": 1.0,
-                "FL_calf_joint": -1.5, "FR_calf_joint": -1.5, "RL_calf_joint": -1.5, "RR_calf_joint": -1.5,
+                # Thigh joints - Very conservative, closer to neutral
+                "FL_thigh_joint": 0.3, "FR_thigh_joint": 0.3, "RL_thigh_joint": 0.3, "RR_thigh_joint": 0.3,
+                # Calf joints - Much more conservative
+                "FL_calf_joint": -1.0, "FR_calf_joint": -1.0, "RL_calf_joint": -1.0, "RR_calf_joint": -1.0,
+            },
+            joint_pos_limits={
+                # Hip joints: ±60° with margin
+                "FL_hip_joint": (-1.0, 1.0), "FR_hip_joint": (-1.0, 1.0),
+                "RL_hip_joint": (-1.0, 1.0), "RR_hip_joint": (-1.0, 1.0),
+                # Front thigh joints: -90° to 190° with margin 
+                "FL_thigh_joint": (-1.5, 3.4), "FR_thigh_joint": (-1.5, 3.4),
+                # Rear thigh joints: -30° to 250° with margin
+                "RL_thigh_joint": (-0.5, 4.4), "RR_thigh_joint": (-0.5, 4.4),
+                # All calf joints: -155° to -50° with margin
+                "FL_calf_joint": (-2.7, -0.9), "FR_calf_joint": (-2.7, -0.9),
+                "RL_calf_joint": (-2.7, -0.9), "RR_calf_joint": (-2.7, -0.9),
             },
             num_actions=12,
-            base_init_pos=[0.0, 0.0, 0.42],
+            base_init_pos=[0.0, 0.0, 0.42],  # Argo-Robot proven base height
             base_init_quat=[1.0, 0.0, 0.0, 0.0],
-            kp=20.0,
-            kd=0.5,
-            action_scale=0.25,
+            kp=100.0,  # Increased from Argo-Robot 20.0 for Genesis physics stability
+            kd=5.0,   # Increased from Argo-Robot 0.5 for Genesis physics stability  
+            action_scale=0.25,  # Argo-Robot proven scaling
+            clip_actions=1.5,  # Reasonable clipping
+            torque_limit=40.0,  # Higher torque for standing up
             termination_conditions={
-                "max_roll_degrees": 10.0,
-                "max_pitch_degrees": 10.0,
+                "max_roll_degrees": 25.0,  # Allow more tilt during recovery
+                "max_pitch_degrees": 25.0,
+                "joint_limit_margin": 0.10,  # Reasonable margin
             }
         )
     

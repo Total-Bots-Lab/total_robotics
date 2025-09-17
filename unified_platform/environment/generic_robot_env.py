@@ -48,7 +48,9 @@ class GenericRobotGymEnv(gym.Env):
         reward_manager: Optional[RewardManager] = None,
         num_envs: int = 1, 
         render_mode: Optional[str] = "human",
-        obs_components: Optional[list] = None
+        obs_components: Optional[list] = None,
+        show_viewer: bool = True,
+        stand_warmup_steps: int = 50,
     ):
         """Initialize generic robot environment."""
         super().__init__()
@@ -59,6 +61,8 @@ class GenericRobotGymEnv(gym.Env):
         self.robot_config = robot_config
         self.num_envs = num_envs
         self.render_mode = render_mode
+        self.show_viewer = show_viewer
+        self.stand_warmup_steps = stand_warmup_steps
         
         # Initialize Genesis first
         try:
@@ -147,7 +151,7 @@ class GenericRobotGymEnv(gym.Env):
                 camera_lookat=(0.0, 0.0, 0.5),
                 camera_fov=40,
             ),
-            show_viewer=True,  # Always show viewer by default
+            show_viewer=self.show_viewer,  # Use parameter instead of hardcoded True
             vis_options=gs.options.VisOptions(rendered_envs_idx=list(range(1))),
             rigid_options=gs.options.RigidOptions(
                 dt=self.dt,
@@ -167,14 +171,28 @@ class GenericRobotGymEnv(gym.Env):
         self.base_init_quat = torch.tensor(self.robot_config.base_init_quat, device=self.device)
         self.inv_base_init_quat = inv_quat(self.base_init_quat)
         
-        # Load robot from URDF
-        self.robot = self.scene.add_entity(
-            gs.morphs.URDF(
-                file=self.robot_config.urdf_path,
+        # Load robot from URDF or XML
+        robot_file_path = self.robot_config.urdf_path
+        
+        # Determine the appropriate Genesis morph based on file extension
+        if robot_file_path.endswith('.xml'):
+            # Use MJCF for XML files (MuJoCo format)
+            robot_morph = gs.morphs.MJCF(
+                file=robot_file_path,
                 pos=self.base_init_pos.cpu().numpy(),
                 quat=self.base_init_quat.cpu().numpy(),
-            ),
-        )
+            )
+        elif robot_file_path.endswith('.urdf'):
+            # Use URDF for URDF files
+            robot_morph = gs.morphs.URDF(
+                file=robot_file_path,
+                pos=self.base_init_pos.cpu().numpy(),
+                quat=self.base_init_quat.cpu().numpy(),
+            )
+        else:
+            raise ValueError(f"Unsupported robot file format: {robot_file_path}")
+        
+        self.robot = self.scene.add_entity(robot_morph)
         
         # Build scene
         self.scene.build(n_envs=self.num_envs)
@@ -251,10 +269,24 @@ class GenericRobotGymEnv(gym.Env):
         
         if self.num_envs == 1 and len(action.shape) == 1:
             action = action.unsqueeze(0)
-        
-        # Apply action
+
+        # Apply action (residual around default) - FOLLOWING ARGO-ROBOT IMPLEMENTATION
         self.actions = torch.clip(action, -self.robot_config.clip_actions, self.robot_config.clip_actions)
-        target_dof_pos = self.actions * self.robot_config.action_scale + self.default_dof_pos
+        
+        # EXACT ARGO-ROBOT FORMULA: target = action * scale + default
+        # With optional action latency simulation (they use last_actions on real robot)
+        exec_actions = self.last_actions if hasattr(self, 'simulate_action_latency') and self.simulate_action_latency else self.actions
+        target_dof_pos = exec_actions * self.robot_config.action_scale + self.default_dof_pos
+        
+        # ADDITIONAL HIP JOINT LIMITING: Apply custom joint position limits if configured
+        if hasattr(self.robot_config, 'joint_pos_limits') and self.robot_config.joint_pos_limits:
+            for i, joint_name in enumerate(self.robot_config.joint_names):
+                if joint_name in self.robot_config.joint_pos_limits:
+                    min_pos, max_pos = self.robot_config.joint_pos_limits[joint_name]
+                    target_dof_pos[:, i] = torch.clamp(target_dof_pos[:, i], min_pos, max_pos)
+        
+        # NO MANUAL JOINT CLAMPING - Genesis handles joint limits automatically
+        # This was causing the stiffness - let Genesis handle the limits naturally
         self.robot.control_dofs_position(target_dof_pos, self.motors_dof_idx)
         self.scene.step()
         
@@ -424,7 +456,20 @@ class GenericRobotGymEnv(gym.Env):
     def close(self):
         """Close the environment."""
         if hasattr(self, 'scene'):
-            pass  # Genesis handles cleanup
+            try:
+                # Properly close the Genesis scene
+                if self.scene is not None:
+                    self.scene.reset()  # Reset scene state
+                    self.scene = None
+                    print("🧹 Genesis scene closed")
+            except Exception as e:
+                print(f"⚠️  Scene cleanup warning: {e}")
+        
+        # Clear any cached data
+        if hasattr(self, 'robot'):
+            self.robot = None
+        if hasattr(self, '_obs_buffer'):
+            self._obs_buffer = None
 
 
 # Convenience functions for easy usage
