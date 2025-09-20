@@ -228,8 +228,9 @@ def test_complete_pipeline(existing_env=None):
     print("⚙️ TEST 4: COMPLETE SIMULATION PIPELINE (9 STEPS)")
     print("="*60)
     
+    
     try:
-        from unified_platform.pipeline.simulation_stage import SimulationStage
+        # from unified_platform.pipeline.simulation_stage import SimulationStage
         from unified_platform.config.universal_config import PredefinedConfigs
         
         print("🔧 Creating configuration for complete pipeline...")

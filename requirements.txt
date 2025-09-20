@@ -1,0 +1,54 @@
+# Core dependencies
+genesis-world==0.3.1  # Genesis physics engine
+gymnasium==1.2.0  # Environment framework
+numpy==1.26.4
+torch==2.5.1  # PyTorch
+torchaudio==2.5.1
+torchvision==0.20.1
+stable-baselines3>=2.1.0  # Reinforcement learning
+
+# Robot Simulation and Control
+mujoco==3.3.5
+pyvista==0.46.0
+trimesh==4.7.1
+urdf-parser-py>=0.1.0
+pycollada==0.9.2
+PyYAML==6.0.2
+
+# Physics and Mathematics
+scipy==1.15.3
+sympy==1.13.1
+networkx==3.4.2
+
+# Visualization and Training Tools
+tensorboard==2.20.0
+matplotlib==3.10.5
+plotly==5.24.1
+wandb==0.21.0  # Weights & Biases for experiment tracking
+opencv-python==4.11.0.86
+imageio==2.37.0
+moviepy==2.2.1
+
+# Core Python Libraries
+cloudpickle==3.1.1
+packaging==25.0
+tqdm==4.67.1
+
+# Development Tools
+pytest==8.4.1
+pytest-xdist==3.8.0  # Parallel testing
+black==25.1.0  # Code formatting
+pylint==3.3.5  # Code analysis
+pytest-rerunfailures==15.1
+
+# Optional Dependencies
+taichi==1.7.4  # High-performance computing
+gstaichi==2.1.1
+numba==0.61.2  # JIT compilation
+
+# GPU Support (See docs/cuda_setup.md for detailed CUDA installation guide)
+# Default configuration uses CUDA 11.8
+# To use a different CUDA version, see docs/cuda_setup.md
+torch==2.5.1+cu118  # CUDA 11.8 version
+torchvision==0.20.1+cu118
+torchaudio==2.5.1+cu118
