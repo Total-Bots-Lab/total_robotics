@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genesis Native Training Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+        }
+        .metric-value {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .status-good { color: #4CAF50; }
+        .status-warning { color: #FF9800; }
+        .status-error { color: #F44336; }
+        .genesis-info {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+        .live-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #4CAF50;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        .chart-placeholder {
+            height: 200px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 Genesis Native Training Dashboard</h1>
+        <p><span class="live-indicator"></span> Live Training Session</p>
+        <p>Primary View: Genesis 3D Viewer | Secondary Metrics: This Dashboard</p>
+    </div>
+    
+    <div class="dashboard-grid">
+        <!-- Genesis Status -->
+        <div class="card genesis-info">
+            <h3>🎬 Genesis 3D Viewer Status</h3>
+            <div class="metric">
+                <span>Scene Active:</span>
+                <span id="scene-status" class="metric-value status-good">Active</span>
+            </div>
+            <div class="metric">
+                <span>Viewer Mode:</span>
+                <span id="viewer-mode" class="metric-value">Real-time 3D</span>
+            </div>
+            <div class="metric">
+                <span>Visualization:</span>
+                <span class="metric-value status-good">Native Genesis</span>
+            </div>
+        </div>
+        
+        <!-- Current Training -->
+        <div class="card">
+            <h3>📊 Current Training</h3>
+            <div class="metric">
+                <span>Episode:</span>
+                <span id="current-episode" class="metric-value">0</span>
+            </div>
+            <div class="metric">
+                <span>Step:</span>
+                <span id="current-step" class="metric-value">0</span>
+            </div>
+            <div class="metric">
+                <span>Total Reward:</span>
+                <span id="total-reward" class="metric-value">0.000</span>
+            </div>
+            <div class="metric">
+                <span>Position Error:</span>
+                <span id="position-error" class="metric-value">0.000</span>
+            </div>
+        </div>
+        
+        <!-- Episode Statistics -->
+        <div class="card">
+            <h3>📈 Episode Statistics</h3>
+            <div class="metric">
+                <span>Best Reward:</span>
+                <span id="best-reward" class="metric-value">0.000</span>
+            </div>
+            <div class="metric">
+                <span>Average Reward:</span>
+                <span id="avg-reward" class="metric-value">0.000</span>
+            </div>
+            <div class="metric">
+                <span>Episodes Completed:</span>
+                <span id="episodes-completed" class="metric-value">0</span>
+            </div>
+            <div class="metric">
+                <span>Success Rate:</span>
+                <span id="success-rate" class="metric-value">0%</span>
+            </div>
+        </div>
+        
+        <!-- Quick Metrics Chart -->
+        <div class="card">
+            <h3>📊 Quick Trend (Last 10 Episodes)</h3>
+            <div class="chart-placeholder">
+                <canvas id="quick-chart" width="280" height="180"></canvas>
+            </div>
+        </div>
+        
+        <!-- System Info -->
+        <div class="card">
+            <h3>⚙️ System Status</h3>
+            <div class="metric">
+                <span>Dashboard Type:</span>
+                <span class="metric-value status-good">Genesis Native</span>
+            </div>
+            <div class="metric">
+                <span>TensorBoard:</span>
+                <span class="metric-value status-warning">Replaced</span>
+            </div>
+            <div class="metric">
+                <span>Streaming:</span>
+                <span id="streaming-status" class="metric-value status-good">Active</span>
+            </div>
+            <div class="metric">
+                <span>Last Update:</span>
+                <span id="last-update" class="metric-value">Loading...</span>
+            </div>
+        </div>
+        
+        <!-- Training Log -->
+        <div class="card">
+            <h3>📝 Recent Activity</h3>
+            <div id="activity-log" style="height: 150px; overflow-y: auto; font-size: 0.9em;">
+                <div>Genesis Native Dashboard initialized...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let streamData = {};
+        let chart = null;
+        
+        function initChart() {
+            const canvas = document.getElementById('quick-chart');
+            const ctx = canvas.getContext('2d');
+            
+            // Simple chart drawing function
+            chart = {
+                canvas: canvas,
+                ctx: ctx,
+                data: [],
+                draw: function() {
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    if (this.data.length < 2) return;
+                    
+                    const padding = 20;
+                    const width = this.canvas.width - 2 * padding;
+                    const height = this.canvas.height - 2 * padding;
+                    
+                    // Draw grid
+                    this.ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+                    this.ctx.lineWidth = 1;
+                    for (let i = 0; i <= 5; i++) {
+                        const y = padding + (height / 5) * i;
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(padding, y);
+                        this.ctx.lineTo(this.canvas.width - padding, y);
+                        this.ctx.stroke();
+                    }
+                    
+                    // Draw line
+                    if (this.data.length > 1) {
+                        this.ctx.strokeStyle = '#4CAF50';
+                        this.ctx.lineWidth = 2;
+                        this.ctx.beginPath();
+                        
+                        const maxVal = Math.max(...this.data);
+                        const minVal = Math.min(...this.data);
+                        const range = maxVal - minVal || 1;
+                        
+                        for (let i = 0; i < this.data.length; i++) {
+                            const x = padding + (width / (this.data.length - 1)) * i;
+                            const y = padding + height - ((this.data[i] - minVal) / range) * height;
+                            
+                            if (i === 0) {
+                                this.ctx.moveTo(x, y);
+                            } else {
+                                this.ctx.lineTo(x, y);
+                            }
+                        }
+                        this.ctx.stroke();
+                    }
+                }
+            };
+        }
+        
+        function updateDashboard() {
+            fetch('stream_data.json')
+                .then(response => response.json())
+                .then(data => {
+                    streamData = data;
+                    
+                    // Update current training
+                    document.getElementById('current-episode').textContent = data.current_episode || 0;
+                    document.getElementById('current-step').textContent = data.current_step || 0;
+                    
+                    // Update latest metrics
+                    if (data.latest_metrics) {
+                        document.getElementById('total-reward').textContent = 
+                            (data.latest_metrics.total_reward || 0).toFixed(3);
+                        document.getElementById('position-error').textContent = 
+                            (data.latest_metrics.position_error || 0).toFixed(3);
+                    }
+                    
+                    // Update episode statistics
+                    if (data.episode_history && data.episode_history.length > 0) {
+                        const rewards = data.episode_history.map(ep => ep.total_reward || 0);
+                        const bestReward = Math.max(...rewards);
+                        const avgReward = rewards.reduce((a, b) => a + b, 0) / rewards.length;
+                        
+                        document.getElementById('best-reward').textContent = bestReward.toFixed(3);
+                        document.getElementById('avg-reward').textContent = avgReward.toFixed(3);
+                        document.getElementById('episodes-completed').textContent = data.episode_history.length;
+                        
+                        // Update chart
+                        if (chart) {
+                            chart.data = rewards.slice(-10); // Last 10 episodes
+                            chart.draw();
+                        }
+                    }
+                    
+                    // Update Genesis status
+                    document.getElementById('scene-status').textContent = 
+                        data.genesis_info?.scene_active ? 'Active' : 'Inactive';
+                    
+                    // Update timestamp
+                    document.getElementById('last-update').textContent = 
+                        new Date().toLocaleTimeString();
+                    
+                    // Update activity log
+                    if (data.realtime_updates && data.realtime_updates.length > 0) {
+                        const log = document.getElementById('activity-log');
+                        const latest = data.realtime_updates.slice(-5); // Last 5 updates
+                        log.innerHTML = latest.map(update => 
+                            `<div>[${new Date(update.timestamp).toLocaleTimeString()}] ${update.message}</div>`
+                        ).join('');
+                        log.scrollTop = log.scrollHeight;
+                    }
+                })
+                .catch(error => {
+                    console.log('Dashboard update pending...');
+                    document.getElementById('streaming-status').textContent = 'Connecting...';
+                    document.getElementById('streaming-status').className = 'metric-value status-warning';
+                });
+        }
+        
+        // Initialize
+        initChart();
+        updateDashboard();
+        
+        // Update every 2 seconds
+        setInterval(updateDashboard, 2000);
+        
+        // Add activity
+        setTimeout(() => {
+            const log = document.getElementById('activity-log');
+            log.innerHTML += '<div>[' + new Date().toLocaleTimeString() + '] Dashboard ready for Genesis streaming</div>';
+        }, 1000);
+    </script>
+</body>
+</html>

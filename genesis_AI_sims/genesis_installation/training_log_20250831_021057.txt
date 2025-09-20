@@ -1,0 +1,49 @@
+? Current working directory: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation
+ Log will be saved to: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation\training_log_20250831_021057.txt
+
+? Initializing Live Training Monitor...
+? Live Training Monitor started - Console-based monitoring active!
+? Real-time statistics will be displayed in console for threading compatibility
+? Console-based monitoring active - Enhanced live stats in console
+? Live Monitor launched - Real-time graphs available!
+? Real-time Min/Mean/Max statistics will be displayed every few episodes
+================================================================================
+
+? Initializing Genesis Native Dashboard (TensorBoard Replacement)...
+? Genesis Native Dashboard enabled!
+? PRIMARY: Genesis 3D Viewer - Real-time robot visualization
+? SECONDARY: Web Dashboard - http://localhost:8090/dashboard.html
+? TensorBoard REPLACED with Genesis Native streaming!
+? Tracking same metrics: rewards, errors, losses, actions
+
+? PURE ENVIRONMENT-DRIVEN LEARNING - NO REFERENCE TRAJECTORY!
+? Robot will learn through goal-based exploration and discovery
+? Goals will be dynamically generated based on workspace exploration
+? Curriculum learning: difficulty increases as robot improves
+? Pure environment learning initialized
+? Dynamic goal-based learning with curriculum progression
+? Robot will discover optimal behaviors through exploration
+? PURE ENVIRONMENT-DRIVEN LEARNING ENVIRONMENT CREATED!
+? Goal-based learning with dynamic curriculum
+? Robot will explore and discover optimal behaviors
+? No predefined trajectory - pure environment feedback!
+State dimension: 44
+Action dimension: 9
+? Pure environment learning - dynamic goal-based rewards
+? No predefined trajectory - robot will explore and discover!
+
+=== TESTING CLEAN EXIT - 1 EPISODE ===
+? Testing Genesis exit behavior with natural completion
+? Pure Environment-Driven Learning: NO REFERENCE TRAJECTORY
+? Goal-Based Learning: Robot discovers optimal behaviors
+? Exploration: Agent learns through trial and discovery
+? Curriculum: Difficulty adapts based on performance
+? TEST: Single episode to verify clean exit
+? GOAL VISUALIZATION:
+[GREEN SPHERES] Dynamic goals: Current target positions
+[BLUE TUBES] Training trajectory: Robot's discovered path
+[YELLOW SPHERE] Current position: Robot's end-effector
+[COLORED TRAILS] Exploration paths: Different episode attempts
+? TEST RUN: Will run 1 episode to verify clean exit (no time limit)
+? This test verifies Genesis exits properly without hanging
+[PERMANENT] Goal visualization: DYNAMIC GREEN SPHERES for current goals

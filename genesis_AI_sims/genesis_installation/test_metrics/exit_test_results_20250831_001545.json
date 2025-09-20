@@ -1,0 +1,9 @@
+{
+  "episodes_completed": 2,
+  "rewards": {
+    "episode_1": 419.9629996237627,
+    "episode_2": 1317.38565183338,
+    "improvement": 897.4226522096174
+  },
+  "test_duration": 2
+}

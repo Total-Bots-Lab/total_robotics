@@ -1,0 +1,482 @@
+🚀 IMPROVED PURE ENVIRONMENT TRAINING - 2025-08-31 11:53:04.757288
+📝 Log file: improved_training_log_20250831_115304.txt
+🔧 APPLIED FIXES: Tolerance↑, Reward↓, Episodes↑, Exploration↑
+
+======================================================================
+🚀 IMPROVED PURE ENVIRONMENT TRAINING
+🔧 APPLIED IMPROVEMENTS FROM TRAINING ANALYSIS:
+   • Goal tolerance: 0.10m → 0.20m (2x easier)
+   • Episode length: 100 → 300 steps (3x longer)
+   • Reward penalty: -2.0 → -0.5 (4x gentler)
+   • Goal bonus: 100 → 200 points (2x bigger)
+   • Exploration: enhanced noise & slower decay
+   • Curriculum: easy → medium → hard goals
+======================================================================
+🎬 Enhanced visualization setup complete:
+   • Camera position: (2.0, 2.0, 1.5)
+   • Compatible lighting added
+   • Ground plane with material properties
+   • World coordinate frame visible
+   • Genesis 0.3.1 compatible settings
+🤖 Robot loaded with 9 joints
+📚 Curriculum: 20 easy, 26 medium, 18 hard goals
+🏭 Pre-allocating trajectory marker pool...
+⚠️ Trajectory marker pool initialization failed: Scene is already built.
+   Trajectory visualization will use position logging only
+🏭 INDUSTRY-STANDARD TRAJECTORY VISUALIZATION INITIALIZED
+   ✅ Real-time end-effector path tracking
+   ✅ Multi-episode trajectory comparison
+   ✅ Professional goal marker system
+   ✅ Success/failure visual indicators
+   ✅ Color-coded performance analysis
+   ✅ Trajectory efficiency metrics
+   ✅ Pre-allocated trajectory markers: 500
+⚠️ Goal marker creation failed: Scene is already built.
+   Continuing with default goal system...
+🎯 IMPROVED Environment initialized
+📏 Goal tolerance: 0.2m (2x easier)
+⏱️ Episode length: 300 steps (3x longer)
+📚 Curriculum goals: 64 total
+🔴 Goal marker added for visualization
+📊 EPISODE 1 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [ 0.2        -0.34641016  0.4       ]
+   • Success rate: 0/1
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [ 0.2        -0.34641016  0.4       ] (dist: 0.360m, level: 1)
+📊 State dimension: 28
+🎮 Action dimension: 9
+🤖 IMPROVED PPO-DDPG Agent initialized on cuda
+📊 Actor LR: 0.0003 (↑), Critic LR: 0.001
+🔍 Exploration: noise=0.3 (↑), decay=0.999 (slower)
+💾 Buffer: 100000 samples (2x larger)
+
+🏃 Starting IMPROVED training for 10 episodes...
+📊 EPISODE 2 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [0.15       0.25980762 0.5       ]
+   • Success rate: 0/1
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [0.15       0.25980762 0.5       ] (dist: 0.265m, level: 1)
+
+📈 Episode 1/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[ 0.18873687 -0.06752987  0.49476018], Goal_dist=0.480m, Markers=0
+  Step 50: reward=4.25, dist=0.480m, goals=1, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[ 0.19476744 -0.0391667   0.46877909], Goal_dist=0.461m, Markers=0
+  Step 100: reward=4.27, dist=0.461m, goals=1, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.19246517 0.06587664 0.5362191 ], Goal_dist=0.416m, Markers=0
+  Step 150: reward=6.79, dist=0.416m, goals=1, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[ 0.19909984 -0.03514282  0.53120247], Goal_dist=0.475m, Markers=0
+  Step 200: reward=4.26, dist=0.475m, goals=1, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[ 0.19807837 -0.0040021   0.51991754], Goal_dist=0.453m, Markers=0
+  Step 250: reward=4.27, dist=0.453m, goals=1, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.18218163 0.07072849 0.44428885], Goal_dist=0.385m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 2:
+   • Points Recorded: 300
+   • Total Distance: 25.303m
+   • Efficiency Score: 0.022
+   • Success: ❌ Goal missed
+  Step 300: reward=6.80, dist=0.385m, goals=1, lvl=1, prox=5.0, prog=2.0
+✅ Episode 1 complete:
+   Total Reward: 1835.74
+   Steps: 300
+   Goals Reached: 1
+   Curriculum Level: 1
+   Success Rate: 100.0%
+   Actor Loss: 0.0277
+   Critic Loss: 105.6469
+   Noise Level: 0.2222
+📊 EPISODE 3 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [0.3 0.  0.5]
+   • Success rate: 1/2
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [0.3 0.  0.5] (dist: 0.098m, level: 1)
+
+📈 Episode 2/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[ 0.19634352 -0.00251764  0.59630288], Goal_dist=0.331m, Markers=0
+  Step 50: reward=4.33, dist=0.331m, goals=1, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[ 0.2029483  -0.02774859  0.58819491], Goal_dist=0.348m, Markers=0
+  Step 100: reward=4.32, dist=0.348m, goals=1, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.2031166  0.01103358 0.59249636], Goal_dist=0.319m, Markers=0
+  Step 150: reward=4.34, dist=0.319m, goals=1, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[0.19597541 0.01907105 0.47074663], Goal_dist=0.255m, Markers=0
+  Step 200: reward=11.87, dist=0.255m, goals=1, lvl=1, prox=10.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[0.19474338 0.05794342 0.52845373], Goal_dist=0.243m, Markers=0
+  Step 250: reward=9.37, dist=0.243m, goals=1, lvl=1, prox=10.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.19850481 0.02940056 0.52274895], Goal_dist=0.266m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 3:
+   • Points Recorded: 300
+   • Total Distance: 18.770m
+   • Efficiency Score: 0.014
+   • Success: ❌ Goal missed
+  Step 300: reward=11.86, dist=0.266m, goals=1, lvl=1, prox=10.0, prog=2.0
+✅ Episode 2 complete:
+   Total Reward: 3067.41
+   Steps: 300
+   Goals Reached: 1
+   Curriculum Level: 1
+   Success Rate: 100.0%
+   Actor Loss: 0.1325
+   Critic Loss: 22.5497
+   Noise Level: 0.1646
+📊 EPISODE 4 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [ 0.15       -0.25980762  0.4       ]
+   • Success rate: 2/3
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [ 0.15       -0.25980762  0.4       ] (dist: 0.282m, level: 1)
+
+📈 Episode 3/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[0.20048525 0.02489534 0.52980443], Goal_dist=0.317m, Markers=0
+  Step 50: reward=6.84, dist=0.317m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[0.19142493 0.06160142 0.52776626], Goal_dist=0.348m, Markers=0
+  Step 100: reward=4.32, dist=0.348m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.19536478 0.04452101 0.54125466], Goal_dist=0.339m, Markers=0
+  Step 150: reward=6.83, dist=0.339m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[0.20010106 0.01163462 0.55220125], Goal_dist=0.315m, Markers=0
+  Step 200: reward=6.84, dist=0.315m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[0.19711907 0.03636197 0.53491947], Goal_dist=0.329m, Markers=0
+  Step 250: reward=4.33, dist=0.329m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.19275076 0.05373782 0.50186318], Goal_dist=0.332m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 4:
+   • Points Recorded: 300
+   • Total Distance: 13.830m
+   • Efficiency Score: 0.025
+   • Success: ❌ Goal missed
+  Step 300: reward=6.83, dist=0.332m, goals=0, lvl=1, prox=5.0, prog=2.0
+✅ Episode 3 complete:
+   Total Reward: 1951.04
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 1
+   Success Rate: 66.7%
+   Actor Loss: 0.1253
+   Critic Loss: 11.4978
+   Noise Level: 0.1219
+📊 EPISODE 5 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [0.2        0.34641016 0.5       ]
+   • Success rate: 2/4
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [0.2        0.34641016 0.5       ] (dist: 0.346m, level: 1)
+
+📈 Episode 4/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[0.19956887 0.01157401 0.5397827 ], Goal_dist=0.337m, Markers=0
+  Step 50: reward=4.33, dist=0.337m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[0.20008495 0.02646853 0.55071444], Goal_dist=0.324m, Markers=0
+  Step 100: reward=6.83, dist=0.324m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.20011095 0.01847642 0.54994758], Goal_dist=0.332m, Markers=0
+  Step 150: reward=4.33, dist=0.332m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[0.19623877 0.03745796 0.49379926], Goal_dist=0.309m, Markers=0
+  Step 200: reward=6.84, dist=0.309m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[0.19817573 0.03190317 0.53228193], Goal_dist=0.316m, Markers=0
+  Step 250: reward=4.34, dist=0.316m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.20172656 0.02098812 0.56466391], Goal_dist=0.332m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 5:
+   • Points Recorded: 300
+   • Total Distance: 10.848m
+   • Efficiency Score: 0.025
+   • Success: ❌ Goal missed
+  Step 300: reward=6.83, dist=0.332m, goals=0, lvl=1, prox=5.0, prog=2.0
+✅ Episode 4 complete:
+   Total Reward: 1780.26
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 1
+   Success Rate: 50.0%
+   Actor Loss: 0.1247
+   Critic Loss: 7.5463
+   Noise Level: 0.1000
+📊 EPISODE 6 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [-0.15        0.25980762  0.5       ]
+   • Success rate: 2/5
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [-0.15        0.25980762  0.5       ] (dist: 0.438m, level: 1)
+
+📈 Episode 5/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[0.20394628 0.00865241 0.5441484 ], Goal_dist=0.436m, Markers=0
+  Step 50: reward=4.28, dist=0.436m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[0.20041498 0.015589   0.51259779], Goal_dist=0.427m, Markers=0
+  Step 100: reward=6.78, dist=0.427m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.20152645 0.0135702  0.53870786], Goal_dist=0.431m, Markers=0
+  Step 150: reward=4.28, dist=0.431m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[0.20242555 0.00730567 0.54491931], Goal_dist=0.436m, Markers=0
+  Step 200: reward=4.28, dist=0.436m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[0.19863742 0.01996544 0.56827515], Goal_dist=0.429m, Markers=0
+  Step 250: reward=4.28, dist=0.429m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.20112643 0.02082335 0.58422771], Goal_dist=0.433m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 6:
+   • Points Recorded: 300
+   • Total Distance: 9.901m
+   • Efficiency Score: 0.041
+   • Success: ❌ Goal missed
+  Step 300: reward=4.28, dist=0.433m, goals=0, lvl=1, prox=5.0, prog=-0.5
+✅ Episode 5 complete:
+   Total Reward: 1650.44
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 1
+   Success Rate: 40.0%
+   Actor Loss: 0.1135
+   Critic Loss: 8.3759
+   Noise Level: 0.1000
+📊 EPISODE 7 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [-0.2        -0.34641016  0.4       ]
+   • Success rate: 2/6
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [-0.2        -0.34641016  0.4       ] (dist: 0.540m, level: 1)
+
+📈 Episode 6/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[ 0.20018597 -0.00432592  0.51241186], Goal_dist=0.538m, Markers=0
+  Step 50: reward=1.73, dist=0.538m, goals=0, lvl=1, prox=0.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[0.19864964 0.02656415 0.52818873], Goal_dist=0.561m, Markers=0
+  Step 100: reward=1.72, dist=0.561m, goals=0, lvl=1, prox=0.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.19955237 0.01986102 0.51132172], Goal_dist=0.553m, Markers=0
+  Step 150: reward=1.72, dist=0.553m, goals=0, lvl=1, prox=0.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[0.19777048 0.03313388 0.52783848], Goal_dist=0.564m, Markers=0
+  Step 200: reward=-0.79, dist=0.564m, goals=0, lvl=1, prox=0.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[0.19834263 0.03159632 0.57110217], Goal_dist=0.575m, Markers=0
+  Step 250: reward=-0.79, dist=0.575m, goals=0, lvl=1, prox=0.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.19578291 0.03513032 0.56271333], Goal_dist=0.573m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 7:
+   • Points Recorded: 300
+   • Total Distance: 10.499m
+   • Efficiency Score: 0.056
+   • Success: ❌ Goal missed
+  Step 300: reward=-0.79, dist=0.573m, goals=0, lvl=1, prox=0.0, prog=-0.5
+✅ Episode 6 complete:
+   Total Reward: 121.61
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 1
+   Success Rate: 33.3%
+   Actor Loss: 0.1320
+   Critic Loss: 12.3670
+   Noise Level: 0.1000
+📊 EPISODE 8 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [0.15       0.25980762 0.4       ]
+   • Success rate: 2/7
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [0.15       0.25980762 0.4       ] (dist: 0.281m, level: 1)
+
+📈 Episode 7/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[0.19781948 0.02632538 0.49037457], Goal_dist=0.255m, Markers=0
+  Step 50: reward=11.87, dist=0.255m, goals=0, lvl=1, prox=10.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[0.19817649 0.03388515 0.50881841], Goal_dist=0.255m, Markers=0
+  Step 100: reward=11.87, dist=0.255m, goals=0, lvl=1, prox=10.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.2055051  0.03163047 0.57518228], Goal_dist=0.293m, Markers=0
+  Step 150: reward=9.35, dist=0.293m, goals=0, lvl=1, prox=10.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[0.20364211 0.00440567 0.54849252], Goal_dist=0.300m, Markers=0
+  Step 200: reward=4.35, dist=0.300m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[0.19411802 0.049934   0.54150016], Goal_dist=0.257m, Markers=0
+  Step 250: reward=11.87, dist=0.257m, goals=0, lvl=1, prox=10.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.19526019 0.0388447  0.48969491], Goal_dist=0.243m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 8:
+   • Points Recorded: 300
+   • Total Distance: 10.283m
+   • Efficiency Score: 0.032
+   • Success: ❌ Goal missed
+  Step 300: reward=11.87, dist=0.243m, goals=0, lvl=1, prox=10.0, prog=2.0
+✅ Episode 7 complete:
+   Total Reward: 3077.72
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 1
+   Success Rate: 28.6%
+   Actor Loss: 0.1084
+   Critic Loss: 13.3456
+   Noise Level: 0.1000
+📊 EPISODE 9 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [-0.2         0.34641016  0.4       ]
+   • Success rate: 2/8
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [-0.2         0.34641016  0.4       ] (dist: 0.539m, level: 1)
+
+📈 Episode 8/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[0.19943823 0.02449829 0.54238162], Goal_dist=0.532m, Markers=0
+  Step 50: reward=1.73, dist=0.532m, goals=0, lvl=1, prox=0.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[0.19691776 0.03737076 0.5014338 ], Goal_dist=0.513m, Markers=0
+  Step 100: reward=1.74, dist=0.513m, goals=0, lvl=1, prox=0.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.20510258 0.01161369 0.57576016], Goal_dist=0.554m, Markers=0
+  Step 150: reward=-0.78, dist=0.554m, goals=0, lvl=1, prox=0.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[0.19793821 0.03708278 0.55149762], Goal_dist=0.526m, Markers=0
+  Step 200: reward=1.73, dist=0.526m, goals=0, lvl=1, prox=0.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[0.20506498 0.00800807 0.56503312], Goal_dist=0.553m, Markers=0
+  Step 250: reward=-0.78, dist=0.553m, goals=0, lvl=1, prox=0.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.1992405  0.0325412  0.53196264], Goal_dist=0.525m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 9:
+   • Points Recorded: 300
+   • Total Distance: 10.284m
+   • Efficiency Score: 0.051
+   • Success: ❌ Goal missed
+  Step 300: reward=-0.77, dist=0.525m, goals=0, lvl=1, prox=0.0, prog=-0.5
+✅ Episode 8 complete:
+   Total Reward: 171.63
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 1
+   Success Rate: 25.0%
+   Actor Loss: 0.1256
+   Critic Loss: 14.4238
+   Noise Level: 0.1000
+📊 EPISODE 10 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [-0.15       -0.25980762  0.5       ]
+   • Success rate: 2/9
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [-0.15       -0.25980762  0.5       ] (dist: 0.438m, level: 1)
+
+📈 Episode 9/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[0.19508594 0.05037988 0.5202905 ], Goal_dist=0.464m, Markers=0
+  Step 50: reward=4.26, dist=0.464m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[0.20079515 0.02394388 0.5433386 ], Goal_dist=0.453m, Markers=0
+  Step 100: reward=6.77, dist=0.453m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.20152028 0.02069139 0.53840013], Goal_dist=0.451m, Markers=0
+  Step 150: reward=6.77, dist=0.451m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[0.19994288 0.02530013 0.53599429], Goal_dist=0.453m, Markers=0
+  Step 200: reward=6.77, dist=0.453m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[0.20190457 0.01183217 0.53676941], Goal_dist=0.446m, Markers=0
+  Step 250: reward=6.77, dist=0.446m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.19790603 0.03813454 0.52363528], Goal_dist=0.459m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 10:
+   • Points Recorded: 300
+   • Total Distance: 10.627m
+   • Efficiency Score: 0.046
+   • Success: ❌ Goal missed
+  Step 300: reward=4.27, dist=0.459m, goals=0, lvl=1, prox=5.0, prog=-0.5
+✅ Episode 9 complete:
+   Total Reward: 1665.57
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 1
+   Success Rate: 22.2%
+   Actor Loss: 0.1155
+   Critic Loss: 15.8948
+   Noise Level: 0.1000
+📊 EPISODE 11 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [0.4 0.  0.5]
+   • Success rate: 2/10
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [0.4 0.  0.5] (dist: 0.198m, level: 1)
+
+📈 Episode 10/10
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 50: EE=[0.20308299 0.03119519 0.54759019], Goal_dist=0.348m, Markers=0
+  Step 50: reward=6.82, dist=0.348m, goals=1, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 100: EE=[0.19646174 0.03818505 0.51670198], Goal_dist=0.330m, Markers=0
+  Step 100: reward=6.83, dist=0.330m, goals=1, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 150: EE=[0.20035682 0.01202462 0.52909509], Goal_dist=0.358m, Markers=0
+  Step 150: reward=4.32, dist=0.358m, goals=1, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 200: EE=[0.2003301  0.02987819 0.54783214], Goal_dist=0.349m, Markers=0
+  Step 200: reward=4.32, dist=0.349m, goals=1, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 250: EE=[0.19611384 0.03980126 0.50646059], Goal_dist=0.325m, Markers=0
+  Step 250: reward=6.83, dist=0.325m, goals=1, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool at capacity (500), continuing with position tracking
+📍 Step 300: EE=[0.2005469  0.02411068 0.5326065 ], Goal_dist=0.349m, Markers=0
+� TRAJECTORY ANALYSIS - Episode 11:
+   • Points Recorded: 300
+   • Total Distance: 9.837m
+   • Efficiency Score: 0.034
+   • Success: ❌ Goal missed
+  Step 300: reward=4.32, dist=0.349m, goals=1, lvl=1, prox=5.0, prog=-0.5
+✅ Episode 10 complete:
+   Total Reward: 2079.31
+   Steps: 300
+   Goals Reached: 1
+   Curriculum Level: 1
+   Success Rate: 30.0%
+   Actor Loss: 0.1212
+   Critic Loss: 28.6717
+   Noise Level: 0.1000
+
+🎯 IMPROVED TRAINING COMPLETE!
+📊 Episode Rewards: [1835.7385085142714, 3067.413707099232, 1951.037402380973, 1780.255824940105, 1650.4418771322623, 121.61488837530027, 3077.716813381007, 171.62500979097683, 1665.574873447985, 2079.307797228551]
+🎯 Goals per Episode: [1, 1, 0, 0, 0, 0, 0, 0, 0, 1]
+📈 Average Reward: 1740.07
+🏆 Best Reward: 3077.72
+🎯 Total Goals Reached: 3
+🏆 Final Success Rate: 30.0%
+📈 Reward Improvement: 243.57
+💾 Results saved to: improved_results_20250831_115304.json
+🎉 SUCCESS: Agent is learning to reach goals!
+
+================================================================================
+� INDUSTRY-STANDARD TRAJECTORY ANALYSIS SUMMARY
+================================================================================
+📊 TRAJECTORY STATISTICS:
+   • Total Episodes: 10
+   • Successful Trajectories: 0
+   • Success Rate: 0.0%
+🎯 VISUALIZATION SYSTEM STATUS:
+   ✅ Real-time trajectory tracking: ACTIVE
+   ✅ Goal marker system: PROFESSIONAL
+   ✅ Multi-episode comparison: ENABLED
+   ✅ Performance visualization: INDUSTRY-STANDARD
+   ✅ Trajectory efficiency analysis: COMPLETE
+================================================================================
+🎉 INDUSTRY-STANDARD TRAINING & VISUALIZATION COMPLETED!
+================================================================================

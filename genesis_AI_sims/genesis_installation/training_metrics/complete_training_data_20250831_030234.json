@@ -1,0 +1,45 @@
+{
+  "episodes": [
+    1
+  ],
+  "total_rewards": [
+    -851.4330600840575
+  ],
+  "tracking_rewards": [
+    -167.0246079792948
+  ],
+  "position_errors": [
+    0.8351230398964737
+  ],
+  "timestamps": [
+    "2025-08-31T03:00:58.536913"
+  ],
+  "statistics": {
+    "episodes_completed": 1,
+    "total_rewards": {
+      "min": -851.4330600840575,
+      "max": -851.4330600840575,
+      "mean": -851.4330600840575,
+      "std": 0.0,
+      "final": -851.4330600840575,
+      "improvement": 0
+    },
+    "tracking_rewards": {
+      "min": -167.0246079792948,
+      "max": -167.0246079792948,
+      "mean": -167.0246079792948,
+      "std": 0.0,
+      "final": -167.0246079792948
+    },
+    "position_errors": {
+      "min": 0.8351230398964737,
+      "max": 0.8351230398964737,
+      "mean": 0.8351230398964737
+    },
+    "training_metadata": {
+      "start_time": "2025-08-31T03:00:58.536913",
+      "end_time": "2025-08-31T03:00:58.536913",
+      "duration_minutes": 0.1
+    }
+  }
+}
