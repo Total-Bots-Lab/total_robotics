@@ -1,0 +1,12 @@
+? Current working directory: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation
+ Log will be saved to: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation\training_log_20250831_020724.txt
+
+? Initializing Live Training Monitor...
+? Live Training Monitor started - Console-based monitoring active!
+? Real-time statistics will be displayed in console for threading compatibility
+? Console-based monitoring active - Enhanced live stats in console
+? Live Monitor launched - Real-time graphs available!
+? Real-time Min/Mean/Max statistics will be displayed every few episodes
+================================================================================
+
+? Initializing Genesis Native Dashboard (TensorBoard Replacement)...

@@ -1,0 +1,223 @@
+🚀 IMPROVED PURE ENVIRONMENT TRAINING - 2025-08-31 10:33:53.455265
+📝 Log file: improved_training_log_20250831_103353.txt
+🔧 APPLIED FIXES: Tolerance↑, Reward↓, Episodes↑, Exploration↑
+
+======================================================================
+🚀 IMPROVED PURE ENVIRONMENT TRAINING
+🔧 APPLIED IMPROVEMENTS FROM TRAINING ANALYSIS:
+   • Goal tolerance: 0.10m → 0.20m (2x easier)
+   • Episode length: 100 → 300 steps (3x longer)
+   • Reward penalty: -2.0 → -0.5 (4x gentler)
+   • Goal bonus: 100 → 200 points (2x bigger)
+   • Exploration: enhanced noise & slower decay
+   • Curriculum: easy → medium → hard goals
+======================================================================
+🤖 Robot loaded with 9 joints
+📚 Curriculum: 20 easy, 26 medium, 18 hard goals
+🎯 IMPROVED Environment initialized
+📏 Goal tolerance: 0.2m (2x easier)
+⏱️ Episode length: 300 steps (3x longer)
+📚 Curriculum goals: 64 total
+🔄 Reset - Goal: [-0.15        0.25980762  0.4       ] (dist: 0.448m, level: 1)
+📊 State dimension: 28
+🎮 Action dimension: 9
+🤖 IMPROVED PPO-DDPG Agent initialized on cuda
+📊 Actor LR: 0.0003 (↑), Critic LR: 0.001
+🔍 Exploration: noise=0.3 (↑), decay=0.999 (slower)
+💾 Buffer: 100000 samples (2x larger)
+
+🏃 Starting IMPROVED training for 10 episodes...
+🔄 Reset - Goal: [-0.15       -0.25980762  0.4       ] (dist: 0.448m, level: 1)
+
+📈 Episode 1/10
+  Step 50: reward=-0.87, dist=0.715m, goals=2, lvl=1, prox=0.0, prog=-0.5
+🎓 Curriculum advanced to level 2
+🎓 Curriculum advanced to level 3
+  Step 100: reward=-0.78, dist=0.540m, goals=6, lvl=3, prox=0.0, prog=-0.5
+  Step 150: reward=4.29, dist=0.403m, goals=6, lvl=3, prox=5.0, prog=-0.5
+  Step 200: reward=4.31, dist=0.385m, goals=6, lvl=3, prox=5.0, prog=-0.5
+  Step 250: reward=-0.86, dist=0.710m, goals=8, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=1.69, dist=0.618m, goals=8, lvl=3, prox=0.0, prog=2.0
+✅ Episode 1 complete:
+   Total Reward: 2716.06
+   Steps: 300
+   Goals Reached: 8
+   Curriculum Level: 3
+   Success Rate: 800.0%
+   Actor Loss: 1480380056359129575174701056.0000
+   Critic Loss: 458.8658
+   Noise Level: 0.2222
+🔄 Reset - Goal: [3.6739404e-17 6.0000000e-01 5.0000000e-01] (dist: 0.633m, level: 3)
+
+📈 Episode 2/10
+  Step 50: reward=-0.83, dist=0.647m, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 100: reward=1.69, dist=0.613m, goals=0, lvl=3, prox=0.0, prog=2.0
+  Step 150: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 200: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 250: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+✅ Episode 2 complete:
+   Total Reward: nan
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 3
+   Success Rate: 400.0%
+   Actor Loss: nan
+   Critic Loss: nan
+   Noise Level: 0.1646
+🔄 Reset - Goal: [0.5 0.  0.7] (dist: 0.361m, level: 3)
+
+📈 Episode 3/10
+  Step 50: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 100: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 150: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 200: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 250: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+✅ Episode 3 complete:
+   Total Reward: nan
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 3
+   Success Rate: 266.7%
+   Actor Loss: nan
+   Critic Loss: nan
+   Noise Level: 0.1219
+🔄 Reset - Goal: [0.8 0.  0.5] (dist: 0.598m, level: 3)
+
+📈 Episode 4/10
+  Step 50: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 100: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 150: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 200: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 250: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+✅ Episode 4 complete:
+   Total Reward: nan
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 3
+   Success Rate: 200.0%
+   Actor Loss: nan
+   Critic Loss: nan
+   Noise Level: 0.1000
+🔄 Reset - Goal: [0.6 0.  0.7] (dist: 0.447m, level: 3)
+
+📈 Episode 5/10
+  Step 50: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 100: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 150: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 200: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 250: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+✅ Episode 5 complete:
+   Total Reward: nan
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 3
+   Success Rate: 160.0%
+   Actor Loss: nan
+   Critic Loss: nan
+   Noise Level: 0.1000
+🔄 Reset - Goal: [0.49497475 0.49497475 0.5       ] (dist: 0.575m, level: 3)
+
+📈 Episode 6/10
+  Step 50: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 100: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 150: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 200: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 250: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+✅ Episode 6 complete:
+   Total Reward: nan
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 3
+   Success Rate: 133.3%
+   Actor Loss: nan
+   Critic Loss: nan
+   Noise Level: 0.1000
+🔄 Reset - Goal: [0.35355339 0.35355339 0.5       ] (dist: 0.384m, level: 3)
+
+📈 Episode 7/10
+  Step 50: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 100: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 150: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 200: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 250: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+✅ Episode 7 complete:
+   Total Reward: nan
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 3
+   Success Rate: 114.3%
+   Actor Loss: nan
+   Critic Loss: nan
+   Noise Level: 0.1000
+🔄 Reset - Goal: [ 0.56568542 -0.56568542  0.3       ] (dist: 0.700m, level: 3)
+
+📈 Episode 8/10
+  Step 50: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 100: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 150: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 200: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 250: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+✅ Episode 8 complete:
+   Total Reward: nan
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 3
+   Success Rate: 100.0%
+   Actor Loss: nan
+   Critic Loss: nan
+   Noise Level: 0.1000
+🔄 Reset - Goal: [ 0.15       -0.25980762  0.4       ] (dist: 0.282m, level: 3)
+
+📈 Episode 9/10
+  Step 50: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 100: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 150: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 200: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 250: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+✅ Episode 9 complete:
+   Total Reward: nan
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 3
+   Success Rate: 88.9%
+   Actor Loss: nan
+   Critic Loss: nan
+   Noise Level: 0.1000
+🔄 Reset - Goal: [ 0.56568542 -0.56568542  0.3       ] (dist: 0.700m, level: 3)
+
+📈 Episode 10/10
+  Step 50: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 100: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 150: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 200: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 250: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+  Step 300: reward=nan, dist=nanm, goals=0, lvl=3, prox=0.0, prog=-0.5
+✅ Episode 10 complete:
+   Total Reward: nan
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 3
+   Success Rate: 80.0%
+   Actor Loss: nan
+   Critic Loss: nan
+   Noise Level: 0.1000
+
+🎯 IMPROVED TRAINING COMPLETE!
+📊 Episode Rewards: [2716.0550254023115, nan, nan, nan, nan, nan, nan, nan, nan, nan]
+🎯 Goals per Episode: [8, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+📈 Average Reward: nan
+🏆 Best Reward: 2716.06
+🎯 Total Goals Reached: 8
+🏆 Final Success Rate: 80.0%
+📈 Reward Improvement: nan
+💾 Results saved to: improved_results_20250831_103353.json
+🎉 SUCCESS: Agent is learning to reach goals!
+🎉 Improved training completed!

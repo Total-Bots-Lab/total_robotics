@@ -1,0 +1,1692 @@
+{
+  "episodes": [],
+  "step_data": [
+    {
+      "episode": 1,
+      "step": 0,
+      "total_reward": -8.193503408122881,
+      "tracking_reward": -0.7790429829019198,
+      "position_error": 0.7790429829019198,
+      "timestamp": "2025-08-31T00:01:50.385488"
+    },
+    {
+      "episode": 1,
+      "step": 1,
+      "total_reward": -8.132757935519175,
+      "tracking_reward": -0.7803482345988446,
+      "position_error": 0.7803482345988446,
+      "timestamp": "2025-08-31T00:01:50.602905"
+    },
+    {
+      "episode": 1,
+      "step": 2,
+      "total_reward": -8.14548972180983,
+      "tracking_reward": -0.7808547024950346,
+      "position_error": 0.7808547024950346,
+      "timestamp": "2025-08-31T00:01:50.726573"
+    },
+    {
+      "episode": 1,
+      "step": 3,
+      "total_reward": -8.245954583966562,
+      "tracking_reward": -0.7830740345386573,
+      "position_error": 0.7830740345386573,
+      "timestamp": "2025-08-31T00:01:50.853235"
+    },
+    {
+      "episode": 1,
+      "step": 4,
+      "total_reward": -8.233688822378804,
+      "tracking_reward": -0.7840717428884404,
+      "position_error": 0.7840717428884404,
+      "timestamp": "2025-08-31T00:01:50.970919"
+    },
+    {
+      "episode": 1,
+      "step": 5,
+      "total_reward": -8.156160418262616,
+      "tracking_reward": -0.7840567938271435,
+      "position_error": 0.7840567938271435,
+      "timestamp": "2025-08-31T00:01:51.080627"
+    },
+    {
+      "episode": 1,
+      "step": 6,
+      "total_reward": -8.110544378261471,
+      "tracking_reward": -0.783343309024744,
+      "position_error": 0.783343309024744,
+      "timestamp": "2025-08-31T00:01:51.205350"
+    },
+    {
+      "episode": 1,
+      "step": 7,
+      "total_reward": -8.071133756615641,
+      "tracking_reward": -0.7804646367689186,
+      "position_error": 0.7804646367689186,
+      "timestamp": "2025-08-31T00:01:51.310013"
+    },
+    {
+      "episode": 1,
+      "step": 8,
+      "total_reward": -8.017402515521699,
+      "tracking_reward": -0.7764513710140256,
+      "position_error": 0.7764513710140256,
+      "timestamp": "2025-08-31T00:01:51.454823"
+    },
+    {
+      "episode": 1,
+      "step": 9,
+      "total_reward": -8.096082281368336,
+      "tracking_reward": -0.7717264483828186,
+      "position_error": 0.7717264483828186,
+      "timestamp": "2025-08-31T00:01:51.566333"
+    },
+    {
+      "episode": 1,
+      "step": 10,
+      "total_reward": -8.152631606136762,
+      "tracking_reward": -0.7654169206221041,
+      "position_error": 0.7654169206221041,
+      "timestamp": "2025-08-31T00:01:51.703984"
+    },
+    {
+      "episode": 1,
+      "step": 11,
+      "total_reward": -7.976610816258287,
+      "tracking_reward": -0.7564125728445418,
+      "position_error": 0.7564125728445418,
+      "timestamp": "2025-08-31T00:01:51.849577"
+    },
+    {
+      "episode": 1,
+      "step": 12,
+      "total_reward": -7.779387060995438,
+      "tracking_reward": -0.7469833059070785,
+      "position_error": 0.7469833059070785,
+      "timestamp": "2025-08-31T00:01:51.975234"
+    },
+    {
+      "episode": 1,
+      "step": 13,
+      "total_reward": -7.751664550491345,
+      "tracking_reward": -0.7368245294547459,
+      "position_error": 0.7368245294547459,
+      "timestamp": "2025-08-31T00:01:52.086936"
+    },
+    {
+      "episode": 1,
+      "step": 14,
+      "total_reward": -7.658503194186004,
+      "tracking_reward": -0.7281480947416497,
+      "position_error": 0.7281480947416497,
+      "timestamp": "2025-08-31T00:01:52.209818"
+    },
+    {
+      "episode": 1,
+      "step": 15,
+      "total_reward": -7.632585873799858,
+      "tracking_reward": -0.7200979855747291,
+      "position_error": 0.7200979855747291,
+      "timestamp": "2025-08-31T00:01:52.343249"
+    },
+    {
+      "episode": 1,
+      "step": 16,
+      "total_reward": -7.3740386077080595,
+      "tracking_reward": -0.7120630376350847,
+      "position_error": 0.7120630376350847,
+      "timestamp": "2025-08-31T00:01:52.721237"
+    },
+    {
+      "episode": 1,
+      "step": 17,
+      "total_reward": -7.323118072346859,
+      "tracking_reward": -0.7042803884385316,
+      "position_error": 0.7042803884385316,
+      "timestamp": "2025-08-31T00:01:52.881808"
+    },
+    {
+      "episode": 1,
+      "step": 18,
+      "total_reward": -7.1773954054382125,
+      "tracking_reward": -0.6942412063978536,
+      "position_error": 0.6942412063978536,
+      "timestamp": "2025-08-31T00:01:53.034567"
+    },
+    {
+      "episode": 1,
+      "step": 19,
+      "total_reward": -7.109988665178044,
+      "tracking_reward": -0.6816465723979417,
+      "position_error": 0.6816465723979417,
+      "timestamp": "2025-08-31T00:01:53.142111"
+    },
+    {
+      "episode": 1,
+      "step": 20,
+      "total_reward": -6.911795450029219,
+      "tracking_reward": -0.6702966140977522,
+      "position_error": 0.6702966140977522,
+      "timestamp": "2025-08-31T00:01:53.258053"
+    },
+    {
+      "episode": 1,
+      "step": 21,
+      "total_reward": -6.863254969423844,
+      "tracking_reward": -0.6578249104206801,
+      "position_error": 0.6578249104206801,
+      "timestamp": "2025-08-31T00:01:53.382469"
+    },
+    {
+      "episode": 1,
+      "step": 22,
+      "total_reward": -6.756500980343701,
+      "tracking_reward": -0.6446624767705925,
+      "position_error": 0.6446624767705925,
+      "timestamp": "2025-08-31T00:01:53.504144"
+    },
+    {
+      "episode": 1,
+      "step": 23,
+      "total_reward": -6.644065060111201,
+      "tracking_reward": -0.6324626238746891,
+      "position_error": 0.6324626238746891,
+      "timestamp": "2025-08-31T00:01:53.603974"
+    },
+    {
+      "episode": 1,
+      "step": 24,
+      "total_reward": -6.509354860770724,
+      "tracking_reward": -0.6204048983262688,
+      "position_error": 0.6204048983262688,
+      "timestamp": "2025-08-31T00:01:53.898239"
+    },
+    {
+      "episode": 1,
+      "step": 25,
+      "total_reward": -6.468781456623142,
+      "tracking_reward": -0.6091931698052004,
+      "position_error": 0.6091931698052004,
+      "timestamp": "2025-08-31T00:01:54.069633"
+    },
+    {
+      "episode": 1,
+      "step": 26,
+      "total_reward": -6.197793274127795,
+      "tracking_reward": -0.5975750683740432,
+      "position_error": 0.5975750683740432,
+      "timestamp": "2025-08-31T00:01:54.202589"
+    },
+    {
+      "episode": 1,
+      "step": 27,
+      "total_reward": -6.202550287233584,
+      "tracking_reward": -0.5860937074912154,
+      "position_error": 0.5860937074912154,
+      "timestamp": "2025-08-31T00:01:54.317121"
+    },
+    {
+      "episode": 1,
+      "step": 28,
+      "total_reward": -6.136522515425308,
+      "tracking_reward": -0.5754960796440622,
+      "position_error": 0.5754960796440622,
+      "timestamp": "2025-08-31T00:01:54.438726"
+    },
+    {
+      "episode": 1,
+      "step": 29,
+      "total_reward": -5.839180347207867,
+      "tracking_reward": -0.565076546253001,
+      "position_error": 0.565076546253001,
+      "timestamp": "2025-08-31T00:01:54.536384"
+    },
+    {
+      "episode": 1,
+      "step": 30,
+      "total_reward": -5.8980022333867215,
+      "tracking_reward": -0.5552504403863655,
+      "position_error": 0.5552504403863655,
+      "timestamp": "2025-08-31T00:01:54.655065"
+    },
+    {
+      "episode": 1,
+      "step": 31,
+      "total_reward": -5.768767384386804,
+      "tracking_reward": -0.5437620329739902,
+      "position_error": 0.5437620329739902,
+      "timestamp": "2025-08-31T00:01:54.787721"
+    },
+    {
+      "episode": 1,
+      "step": 32,
+      "total_reward": -5.538087293656069,
+      "tracking_reward": -0.5316305931325882,
+      "position_error": 0.5316305931325882,
+      "timestamp": "2025-08-31T00:01:56.024052"
+    },
+    {
+      "episode": 1,
+      "step": 33,
+      "total_reward": -5.48977158878345,
+      "tracking_reward": -0.519950045071784,
+      "position_error": 0.519950045071784,
+      "timestamp": "2025-08-31T00:01:56.154714"
+    },
+    {
+      "episode": 1,
+      "step": 34,
+      "total_reward": -5.52009915894463,
+      "tracking_reward": -0.5202381281309048,
+      "position_error": 0.5202381281309048,
+      "timestamp": "2025-08-31T00:01:56.415006"
+    },
+    {
+      "episode": 1,
+      "step": 35,
+      "total_reward": -5.666350860126981,
+      "tracking_reward": -0.5215994411691313,
+      "position_error": 0.5215994411691313,
+      "timestamp": "2025-08-31T00:01:56.633786"
+    },
+    {
+      "episode": 1,
+      "step": 36,
+      "total_reward": -5.847607057189773,
+      "tracking_reward": -0.5215037094117407,
+      "position_error": 0.5215037094117407,
+      "timestamp": "2025-08-31T00:01:56.746120"
+    },
+    {
+      "episode": 1,
+      "step": 37,
+      "total_reward": -5.89585128126964,
+      "tracking_reward": -0.5196922698586419,
+      "position_error": 0.5196922698586419,
+      "timestamp": "2025-08-31T00:01:56.871783"
+    },
+    {
+      "episode": 1,
+      "step": 38,
+      "total_reward": -5.78821986642959,
+      "tracking_reward": -0.5160852129606905,
+      "position_error": 0.5160852129606905,
+      "timestamp": "2025-08-31T00:01:57.004429"
+    },
+    {
+      "episode": 1,
+      "step": 39,
+      "total_reward": -5.809246085277412,
+      "tracking_reward": -0.5106559740526263,
+      "position_error": 0.5106559740526263,
+      "timestamp": "2025-08-31T00:01:57.138345"
+    },
+    {
+      "episode": 1,
+      "step": 40,
+      "total_reward": -5.734673015931534,
+      "tracking_reward": -0.5035261193340166,
+      "position_error": 0.5035261193340166,
+      "timestamp": "2025-08-31T00:01:57.267332"
+    },
+    {
+      "episode": 1,
+      "step": 41,
+      "total_reward": -5.633497141777341,
+      "tracking_reward": -0.4934682306299107,
+      "position_error": 0.4934682306299107,
+      "timestamp": "2025-08-31T00:01:57.411341"
+    },
+    {
+      "episode": 1,
+      "step": 42,
+      "total_reward": -5.5181483563246525,
+      "tracking_reward": -0.486481122037466,
+      "position_error": 0.486481122037466,
+      "timestamp": "2025-08-31T00:01:57.529317"
+    },
+    {
+      "episode": 1,
+      "step": 43,
+      "total_reward": -5.4197091516132545,
+      "tracking_reward": -0.4804572960228634,
+      "position_error": 0.4804572960228634,
+      "timestamp": "2025-08-31T00:01:57.661709"
+    },
+    {
+      "episode": 1,
+      "step": 44,
+      "total_reward": -5.32753595892963,
+      "tracking_reward": -0.4718949841077538,
+      "position_error": 0.4718949841077538,
+      "timestamp": "2025-08-31T00:01:57.787335"
+    },
+    {
+      "episode": 1,
+      "step": 45,
+      "total_reward": -5.2748081163154685,
+      "tracking_reward": -0.46223404589460454,
+      "position_error": 0.46223404589460454,
+      "timestamp": "2025-08-31T00:01:57.903025"
+    },
+    {
+      "episode": 1,
+      "step": 46,
+      "total_reward": -5.157432176995506,
+      "tracking_reward": -0.4493441724536238,
+      "position_error": 0.4493441724536238,
+      "timestamp": "2025-08-31T00:01:58.042653"
+    },
+    {
+      "episode": 1,
+      "step": 47,
+      "total_reward": -5.12303482130113,
+      "tracking_reward": -0.44157731119630644,
+      "position_error": 0.44157731119630644,
+      "timestamp": "2025-08-31T00:01:58.152359"
+    },
+    {
+      "episode": 1,
+      "step": 48,
+      "total_reward": -4.674274358905741,
+      "tracking_reward": -0.4336703732852976,
+      "position_error": 0.4336703732852976,
+      "timestamp": "2025-08-31T00:01:58.327889"
+    },
+    {
+      "episode": 1,
+      "step": 49,
+      "total_reward": -4.88616669817956,
+      "tracking_reward": -0.42277137423699446,
+      "position_error": 0.42277137423699446,
+      "timestamp": "2025-08-31T00:01:58.448573"
+    },
+    {
+      "episode": 1,
+      "step": 50,
+      "total_reward": -4.723304941687532,
+      "tracking_reward": -0.4070402059852006,
+      "position_error": 0.4070402059852006,
+      "timestamp": "2025-08-31T00:01:58.563303"
+    },
+    {
+      "episode": 1,
+      "step": 51,
+      "total_reward": -4.541413882507677,
+      "tracking_reward": -0.38899123568956623,
+      "position_error": 0.38899123568956623,
+      "timestamp": "2025-08-31T00:01:58.696902"
+    },
+    {
+      "episode": 1,
+      "step": 52,
+      "total_reward": -4.351219202815085,
+      "tracking_reward": -0.3692868107883811,
+      "position_error": 0.3692868107883811,
+      "timestamp": "2025-08-31T00:01:58.803616"
+    },
+    {
+      "episode": 1,
+      "step": 53,
+      "total_reward": -4.111040285133674,
+      "tracking_reward": -0.3445070377157345,
+      "position_error": 0.3445070377157345,
+      "timestamp": "2025-08-31T00:01:58.948229"
+    },
+    {
+      "episode": 1,
+      "step": 54,
+      "total_reward": -3.8349838164619254,
+      "tracking_reward": -0.31314713029080676,
+      "position_error": 0.31314713029080676,
+      "timestamp": "2025-08-31T00:01:59.074076"
+    },
+    {
+      "episode": 1,
+      "step": 55,
+      "total_reward": -3.404329862103423,
+      "tracking_reward": -0.2748157105463714,
+      "position_error": 0.2748157105463714,
+      "timestamp": "2025-08-31T00:01:59.233812"
+    },
+    {
+      "episode": 1,
+      "step": 56,
+      "total_reward": -3.0223027443271406,
+      "tracking_reward": -0.23269920381813353,
+      "position_error": 0.23269920381813353,
+      "timestamp": "2025-08-31T00:01:59.767062"
+    },
+    {
+      "episode": 1,
+      "step": 57,
+      "total_reward": 117.38187871810798,
+      "tracking_reward": 99.8057094373665,
+      "position_error": 0.1942905626334982,
+      "timestamp": "2025-08-31T00:01:59.978473"
+    },
+    {
+      "episode": 1,
+      "step": 58,
+      "total_reward": 13.90817746167987,
+      "tracking_reward": -0.5438884250522021,
+      "position_error": 0.5438884250522021,
+      "timestamp": "2025-08-31T00:02:00.177940"
+    },
+    {
+      "episode": 1,
+      "step": 59,
+      "total_reward": 13.969547914658492,
+      "tracking_reward": -0.5364898984752824,
+      "position_error": 0.5364898984752824,
+      "timestamp": "2025-08-31T00:02:00.289641"
+    },
+    {
+      "episode": 1,
+      "step": 60,
+      "total_reward": 14.047438618109329,
+      "tracking_reward": -0.5290661447336918,
+      "position_error": 0.5290661447336918,
+      "timestamp": "2025-08-31T00:02:00.418513"
+    },
+    {
+      "episode": 1,
+      "step": 61,
+      "total_reward": 14.085137576230636,
+      "tracking_reward": -0.5216877682855261,
+      "position_error": 0.5216877682855261,
+      "timestamp": "2025-08-31T00:02:00.535982"
+    },
+    {
+      "episode": 1,
+      "step": 62,
+      "total_reward": 14.184203925629484,
+      "tracking_reward": -0.5139556928167218,
+      "position_error": 0.5139556928167218,
+      "timestamp": "2025-08-31T00:02:00.651672"
+    },
+    {
+      "episode": 1,
+      "step": 63,
+      "total_reward": 14.262383768024016,
+      "tracking_reward": -0.5054739719694751,
+      "position_error": 0.5054739719694751,
+      "timestamp": "2025-08-31T00:02:00.961843"
+    },
+    {
+      "episode": 1,
+      "step": 64,
+      "total_reward": 14.357846589500458,
+      "tracking_reward": -0.4959151857131356,
+      "position_error": 0.4959151857131356,
+      "timestamp": "2025-08-31T00:02:01.145353"
+    },
+    {
+      "episode": 1,
+      "step": 65,
+      "total_reward": 14.490167523714977,
+      "tracking_reward": -0.4849862051319308,
+      "position_error": 0.4849862051319308,
+      "timestamp": "2025-08-31T00:02:01.247255"
+    },
+    {
+      "episode": 1,
+      "step": 66,
+      "total_reward": 14.60338974536529,
+      "tracking_reward": -0.4726678574401568,
+      "position_error": 0.4726678574401568,
+      "timestamp": "2025-08-31T00:02:01.397810"
+    },
+    {
+      "episode": 1,
+      "step": 67,
+      "total_reward": 14.723229629640585,
+      "tracking_reward": -0.4588384076778769,
+      "position_error": 0.4588384076778769,
+      "timestamp": "2025-08-31T00:02:01.529326"
+    },
+    {
+      "episode": 1,
+      "step": 68,
+      "total_reward": 14.86774729394913,
+      "tracking_reward": -0.4431412305460968,
+      "position_error": 0.4431412305460968,
+      "timestamp": "2025-08-31T00:02:01.668846"
+    },
+    {
+      "episode": 1,
+      "step": 69,
+      "total_reward": 15.030880023183048,
+      "tracking_reward": -0.42562824326521953,
+      "position_error": 0.42562824326521953,
+      "timestamp": "2025-08-31T00:02:01.771676"
+    },
+    {
+      "episode": 1,
+      "step": 70,
+      "total_reward": 15.27071729135741,
+      "tracking_reward": -0.40757588479487966,
+      "position_error": 0.40757588479487966,
+      "timestamp": "2025-08-31T00:02:01.887376"
+    },
+    {
+      "episode": 1,
+      "step": 71,
+      "total_reward": 15.44979485652696,
+      "tracking_reward": -0.3895882661796142,
+      "position_error": 0.3895882661796142,
+      "timestamp": "2025-08-31T00:02:02.090823"
+    },
+    {
+      "episode": 1,
+      "step": 72,
+      "total_reward": 15.627989926474438,
+      "tracking_reward": -0.37619484874753084,
+      "position_error": 0.37619484874753084,
+      "timestamp": "2025-08-31T00:02:02.259372"
+    },
+    {
+      "episode": 1,
+      "step": 73,
+      "total_reward": 15.677779164993355,
+      "tracking_reward": -0.36276781264756874,
+      "position_error": 0.36276781264756874,
+      "timestamp": "2025-08-31T00:02:02.436900"
+    },
+    {
+      "episode": 1,
+      "step": 74,
+      "total_reward": 15.806086956405785,
+      "tracking_reward": -0.348841074102398,
+      "position_error": 0.348841074102398,
+      "timestamp": "2025-08-31T00:02:02.605448"
+    },
+    {
+      "episode": 1,
+      "step": 75,
+      "total_reward": 15.950809865100592,
+      "tracking_reward": -0.3342871808380251,
+      "position_error": 0.3342871808380251,
+      "timestamp": "2025-08-31T00:02:02.715154"
+    },
+    {
+      "episode": 1,
+      "step": 76,
+      "total_reward": 16.11870777160025,
+      "tracking_reward": -0.3192427844983863,
+      "position_error": 0.3192427844983863,
+      "timestamp": "2025-08-31T00:02:02.857772"
+    },
+    {
+      "episode": 1,
+      "step": 77,
+      "total_reward": 16.274799541725976,
+      "tracking_reward": -0.30376280815505025,
+      "position_error": 0.30376280815505025,
+      "timestamp": "2025-08-31T00:02:03.011360"
+    },
+    {
+      "episode": 1,
+      "step": 78,
+      "total_reward": 16.424071606808734,
+      "tracking_reward": -0.2873641163923325,
+      "position_error": 0.2873641163923325,
+      "timestamp": "2025-08-31T00:02:03.168939"
+    },
+    {
+      "episode": 1,
+      "step": 79,
+      "total_reward": 16.61295125777778,
+      "tracking_reward": -0.2693450863592931,
+      "position_error": 0.2693450863592931,
+      "timestamp": "2025-08-31T00:02:03.298758"
+    },
+    {
+      "episode": 1,
+      "step": 80,
+      "total_reward": 16.798413631529705,
+      "tracking_reward": -0.25068416348000366,
+      "position_error": 0.25068416348000366,
+      "timestamp": "2025-08-31T00:02:03.456174"
+    },
+    {
+      "episode": 1,
+      "step": 81,
+      "total_reward": 16.99733445338487,
+      "tracking_reward": -0.23096727716809076,
+      "position_error": 0.23096727716809076,
+      "timestamp": "2025-08-31T00:02:03.595244"
+    },
+    {
+      "episode": 1,
+      "step": 82,
+      "total_reward": 17.208346902198862,
+      "tracking_reward": -0.20987288391883674,
+      "position_error": 0.20987288391883674,
+      "timestamp": "2025-08-31T00:02:03.755987"
+    },
+    {
+      "episode": 1,
+      "step": 83,
+      "total_reward": 137.4238245882205,
+      "tracking_reward": 99.81055213718909,
+      "position_error": 0.18944786281090983,
+      "timestamp": "2025-08-31T00:02:03.961924"
+    },
+    {
+      "episode": 1,
+      "step": 84,
+      "total_reward": 36.051303349388164,
+      "tracking_reward": -0.32429206935988225,
+      "position_error": 0.32429206935988225,
+      "timestamp": "2025-08-31T00:02:04.086485"
+    },
+    {
+      "episode": 1,
+      "step": 85,
+      "total_reward": 35.8096107337455,
+      "tracking_reward": -0.34887825335890127,
+      "position_error": 0.34887825335890127,
+      "timestamp": "2025-08-31T00:02:04.209157"
+    },
+    {
+      "episode": 1,
+      "step": 86,
+      "total_reward": 35.59625980302519,
+      "tracking_reward": -0.37118059698289435,
+      "position_error": 0.37118059698289435,
+      "timestamp": "2025-08-31T00:02:04.344857"
+    },
+    {
+      "episode": 1,
+      "step": 87,
+      "total_reward": 35.384759193380695,
+      "tracking_reward": -0.3938474508119401,
+      "position_error": 0.3938474508119401,
+      "timestamp": "2025-08-31T00:02:04.485417"
+    },
+    {
+      "episode": 1,
+      "step": 88,
+      "total_reward": 35.16482293296234,
+      "tracking_reward": -0.41627581552501836,
+      "position_error": 0.41627581552501836,
+      "timestamp": "2025-08-31T00:02:04.621244"
+    },
+    {
+      "episode": 1,
+      "step": 89,
+      "total_reward": 34.946953903953485,
+      "tracking_reward": -0.4360023744142732,
+      "position_error": 0.4360023744142732,
+      "timestamp": "2025-08-31T00:02:04.736746"
+    },
+    {
+      "episode": 1,
+      "step": 90,
+      "total_reward": 34.77084884853416,
+      "tracking_reward": -0.45289871881248217,
+      "position_error": 0.45289871881248217,
+      "timestamp": "2025-08-31T00:02:04.865401"
+    },
+    {
+      "episode": 1,
+      "step": 91,
+      "total_reward": 34.670563577764995,
+      "tracking_reward": -0.4691030650958372,
+      "position_error": 0.4691030650958372,
+      "timestamp": "2025-08-31T00:02:04.992063"
+    },
+    {
+      "episode": 1,
+      "step": 92,
+      "total_reward": 34.44694373508861,
+      "tracking_reward": -0.4850211564285427,
+      "position_error": 0.4850211564285427,
+      "timestamp": "2025-08-31T00:02:05.106756"
+    },
+    {
+      "episode": 1,
+      "step": 93,
+      "total_reward": 34.34842655311751,
+      "tracking_reward": -0.49761746434877746,
+      "position_error": 0.49761746434877746,
+      "timestamp": "2025-08-31T00:02:05.235412"
+    },
+    {
+      "episode": 1,
+      "step": 94,
+      "total_reward": 34.3282296841531,
+      "tracking_reward": -0.5009056182671622,
+      "position_error": 0.5009056182671622,
+      "timestamp": "2025-08-31T00:02:05.372046"
+    },
+    {
+      "episode": 1,
+      "step": 95,
+      "total_reward": 34.300332990866195,
+      "tracking_reward": -0.4995221885953406,
+      "position_error": 0.4995221885953406,
+      "timestamp": "2025-08-31T00:02:05.578494"
+    },
+    {
+      "episode": 1,
+      "step": 96,
+      "total_reward": 34.34445414142349,
+      "tracking_reward": -0.4962675770438104,
+      "position_error": 0.4962675770438104,
+      "timestamp": "2025-08-31T00:02:05.727097"
+    },
+    {
+      "episode": 1,
+      "step": 97,
+      "total_reward": 34.3722111370655,
+      "tracking_reward": -0.49336724120078207,
+      "position_error": 0.49336724120078207,
+      "timestamp": "2025-08-31T00:02:05.865324"
+    },
+    {
+      "episode": 1,
+      "step": 98,
+      "total_reward": 34.42754207843439,
+      "tracking_reward": -0.49098810609159677,
+      "position_error": 0.49098810609159677,
+      "timestamp": "2025-08-31T00:02:05.987400"
+    },
+    {
+      "episode": 1,
+      "step": 99,
+      "total_reward": 34.43783005251549,
+      "tracking_reward": -0.487403535198256,
+      "position_error": 0.487403535198256,
+      "timestamp": "2025-08-31T00:02:06.127026"
+    },
+    {
+      "episode": 2,
+      "step": 0,
+      "total_reward": -6.704191274451715,
+      "tracking_reward": -0.6041469473108082,
+      "position_error": 0.6041469473108082,
+      "timestamp": "2025-08-31T00:02:09.764319"
+    },
+    {
+      "episode": 2,
+      "step": 1,
+      "total_reward": -6.7066752441837005,
+      "tracking_reward": -0.6041082551349612,
+      "position_error": 0.6041082551349612,
+      "timestamp": "2025-08-31T00:02:09.924868"
+    },
+    {
+      "episode": 2,
+      "step": 2,
+      "total_reward": -6.7127741773491545,
+      "tracking_reward": -0.6046216714645952,
+      "position_error": 0.6046216714645952,
+      "timestamp": "2025-08-31T00:02:10.060505"
+    },
+    {
+      "episode": 2,
+      "step": 3,
+      "total_reward": -6.715765148452025,
+      "tracking_reward": -0.6056049783023048,
+      "position_error": 0.6056049783023048,
+      "timestamp": "2025-08-31T00:02:10.200132"
+    },
+    {
+      "episode": 2,
+      "step": 4,
+      "total_reward": -6.716825717452984,
+      "tracking_reward": -0.6068458408373559,
+      "position_error": 0.6068458408373559,
+      "timestamp": "2025-08-31T00:02:10.313205"
+    },
+    {
+      "episode": 2,
+      "step": 5,
+      "total_reward": -6.735507468813835,
+      "tracking_reward": -0.6080010000224672,
+      "position_error": 0.6080010000224672,
+      "timestamp": "2025-08-31T00:02:10.441486"
+    },
+    {
+      "episode": 2,
+      "step": 6,
+      "total_reward": -6.748656147900865,
+      "tracking_reward": -0.6085969909686536,
+      "position_error": 0.6085969909686536,
+      "timestamp": "2025-08-31T00:02:10.598068"
+    },
+    {
+      "episode": 2,
+      "step": 7,
+      "total_reward": -6.7587454800859526,
+      "tracking_reward": -0.6080338648230581,
+      "position_error": 0.6080338648230581,
+      "timestamp": "2025-08-31T00:02:10.750659"
+    },
+    {
+      "episode": 2,
+      "step": 8,
+      "total_reward": -6.697299757821217,
+      "tracking_reward": -0.6055951315007242,
+      "position_error": 0.6055951315007242,
+      "timestamp": "2025-08-31T00:02:10.896269"
+    },
+    {
+      "episode": 2,
+      "step": 9,
+      "total_reward": -6.645532139183425,
+      "tracking_reward": -0.6004677637303649,
+      "position_error": 0.6004677637303649,
+      "timestamp": "2025-08-31T00:02:11.046866"
+    },
+    {
+      "episode": 2,
+      "step": 10,
+      "total_reward": -6.587581771665661,
+      "tracking_reward": -0.5917765710293046,
+      "position_error": 0.5917765710293046,
+      "timestamp": "2025-08-31T00:02:11.156573"
+    },
+    {
+      "episode": 2,
+      "step": 11,
+      "total_reward": -6.407725221700907,
+      "tracking_reward": -0.5786390973611961,
+      "position_error": 0.5786390973611961,
+      "timestamp": "2025-08-31T00:02:11.299211"
+    },
+    {
+      "episode": 2,
+      "step": 12,
+      "total_reward": -6.271882679260474,
+      "tracking_reward": -0.560245875274847,
+      "position_error": 0.560245875274847,
+      "timestamp": "2025-08-31T00:02:11.413884"
+    },
+    {
+      "episode": 2,
+      "step": 13,
+      "total_reward": -6.002505469890645,
+      "tracking_reward": -0.5359709271602215,
+      "position_error": 0.5359709271602215,
+      "timestamp": "2025-08-31T00:02:11.543538"
+    },
+    {
+      "episode": 2,
+      "step": 14,
+      "total_reward": -5.732659915646706,
+      "tracking_reward": -0.5055118468412804,
+      "position_error": 0.5055118468412804,
+      "timestamp": "2025-08-31T00:02:11.675185"
+    },
+    {
+      "episode": 2,
+      "step": 15,
+      "total_reward": -5.362179932189278,
+      "tracking_reward": -0.4690508591244884,
+      "position_error": 0.4690508591244884,
+      "timestamp": "2025-08-31T00:02:11.795930"
+    },
+    {
+      "episode": 2,
+      "step": 16,
+      "total_reward": -4.953107283430796,
+      "tracking_reward": -0.42939797375776767,
+      "position_error": 0.42939797375776767,
+      "timestamp": "2025-08-31T00:02:11.920529"
+    },
+    {
+      "episode": 2,
+      "step": 17,
+      "total_reward": -4.53132350747348,
+      "tracking_reward": -0.38773564121802384,
+      "position_error": 0.38773564121802384,
+      "timestamp": "2025-08-31T00:02:12.055175"
+    },
+    {
+      "episode": 2,
+      "step": 18,
+      "total_reward": -4.115668797694244,
+      "tracking_reward": -0.3472571933459587,
+      "position_error": 0.3472571933459587,
+      "timestamp": "2025-08-31T00:02:12.187815"
+    },
+    {
+      "episode": 2,
+      "step": 19,
+      "total_reward": -3.91825054909192,
+      "tracking_reward": -0.3254360515428948,
+      "position_error": 0.3254360515428948,
+      "timestamp": "2025-08-31T00:02:12.329435"
+    },
+    {
+      "episode": 2,
+      "step": 20,
+      "total_reward": -3.86683078586562,
+      "tracking_reward": -0.31934885952696973,
+      "position_error": 0.31934885952696973,
+      "timestamp": "2025-08-31T00:02:12.471057"
+    },
+    {
+      "episode": 2,
+      "step": 21,
+      "total_reward": -3.9049833938932497,
+      "tracking_reward": -0.3227407200236846,
+      "position_error": 0.3227407200236846,
+      "timestamp": "2025-08-31T00:02:12.599713"
+    },
+    {
+      "episode": 2,
+      "step": 22,
+      "total_reward": -4.0240708750186425,
+      "tracking_reward": -0.3374360313371279,
+      "position_error": 0.3374360313371279,
+      "timestamp": "2025-08-31T00:02:12.745389"
+    },
+    {
+      "episode": 2,
+      "step": 23,
+      "total_reward": -4.2807795203310866,
+      "tracking_reward": -0.36330617524060854,
+      "position_error": 0.36330617524060854,
+      "timestamp": "2025-08-31T00:02:12.881208"
+    },
+    {
+      "episode": 2,
+      "step": 24,
+      "total_reward": -4.619257031589476,
+      "tracking_reward": -0.39624222642001333,
+      "position_error": 0.39624222642001333,
+      "timestamp": "2025-08-31T00:02:13.010613"
+    },
+    {
+      "episode": 2,
+      "step": 25,
+      "total_reward": -4.9700668859564265,
+      "tracking_reward": -0.4334513984721597,
+      "position_error": 0.4334513984721597,
+      "timestamp": "2025-08-31T00:02:13.148246"
+    },
+    {
+      "episode": 2,
+      "step": 26,
+      "total_reward": -5.370021431462108,
+      "tracking_reward": -0.47332562665162015,
+      "position_error": 0.47332562665162015,
+      "timestamp": "2025-08-31T00:02:13.268945"
+    },
+    {
+      "episode": 2,
+      "step": 27,
+      "total_reward": -5.810178830418685,
+      "tracking_reward": -0.5145066160564867,
+      "position_error": 0.5145066160564867,
+      "timestamp": "2025-08-31T00:02:13.496315"
+    },
+    {
+      "episode": 2,
+      "step": 28,
+      "total_reward": -6.129066475700824,
+      "tracking_reward": -0.5498723776925882,
+      "position_error": 0.5498723776925882,
+      "timestamp": "2025-08-31T00:02:13.664863"
+    },
+    {
+      "episode": 2,
+      "step": 29,
+      "total_reward": -6.428344172938845,
+      "tracking_reward": -0.5811394866764032,
+      "position_error": 0.5811394866764032,
+      "timestamp": "2025-08-31T00:02:13.795514"
+    },
+    {
+      "episode": 2,
+      "step": 30,
+      "total_reward": -6.714840518916966,
+      "tracking_reward": -0.6088471329419817,
+      "position_error": 0.6088471329419817,
+      "timestamp": "2025-08-31T00:02:13.996975"
+    },
+    {
+      "episode": 2,
+      "step": 31,
+      "total_reward": -6.857986858117985,
+      "tracking_reward": -0.6188809551997989,
+      "position_error": 0.6188809551997989,
+      "timestamp": "2025-08-31T00:02:14.170512"
+    },
+    {
+      "episode": 2,
+      "step": 32,
+      "total_reward": -6.9421545821236545,
+      "tracking_reward": -0.6284877426968972,
+      "position_error": 0.6284877426968972,
+      "timestamp": "2025-08-31T00:02:14.390922"
+    },
+    {
+      "episode": 2,
+      "step": 33,
+      "total_reward": -7.054030643514525,
+      "tracking_reward": -0.6384675674547078,
+      "position_error": 0.6384675674547078,
+      "timestamp": "2025-08-31T00:02:14.537530"
+    },
+    {
+      "episode": 2,
+      "step": 34,
+      "total_reward": -7.151683287417995,
+      "tracking_reward": -0.6480048386525951,
+      "position_error": 0.6480048386525951,
+      "timestamp": "2025-08-31T00:02:15.044432"
+    },
+    {
+      "episode": 2,
+      "step": 35,
+      "total_reward": -7.244025352242379,
+      "tracking_reward": -0.6566352302403066,
+      "position_error": 0.6566352302403066,
+      "timestamp": "2025-08-31T00:02:15.255609"
+    },
+    {
+      "episode": 2,
+      "step": 36,
+      "total_reward": -7.3065350641918085,
+      "tracking_reward": -0.6640533477100445,
+      "position_error": 0.6640533477100445,
+      "timestamp": "2025-08-31T00:02:15.429381"
+    },
+    {
+      "episode": 2,
+      "step": 37,
+      "total_reward": -7.272103208448422,
+      "tracking_reward": -0.6607705559975167,
+      "position_error": 0.6607705559975167,
+      "timestamp": "2025-08-31T00:02:15.592706"
+    },
+    {
+      "episode": 2,
+      "step": 38,
+      "total_reward": -7.158835295181801,
+      "tracking_reward": -0.6502736290977188,
+      "position_error": 0.6502736290977188,
+      "timestamp": "2025-08-31T00:02:15.789182"
+    },
+    {
+      "episode": 2,
+      "step": 39,
+      "total_reward": -7.055404268779316,
+      "tracking_reward": -0.6392141624351853,
+      "position_error": 0.6392141624351853,
+      "timestamp": "2025-08-31T00:02:15.996627"
+    },
+    {
+      "episode": 2,
+      "step": 40,
+      "total_reward": -6.99980612557923,
+      "tracking_reward": -0.6337565451667672,
+      "position_error": 0.6337565451667672,
+      "timestamp": "2025-08-31T00:02:16.194099"
+    },
+    {
+      "episode": 2,
+      "step": 41,
+      "total_reward": -7.016161727205172,
+      "tracking_reward": -0.6340671580715318,
+      "position_error": 0.6340671580715318,
+      "timestamp": "2025-08-31T00:02:16.563112"
+    },
+    {
+      "episode": 2,
+      "step": 42,
+      "total_reward": -7.001688571831582,
+      "tracking_reward": -0.6337704098321888,
+      "position_error": 0.6337704098321888,
+      "timestamp": "2025-08-31T00:02:16.811447"
+    },
+    {
+      "episode": 2,
+      "step": 43,
+      "total_reward": -6.953632009084298,
+      "tracking_reward": -0.6311865022123119,
+      "position_error": 0.6311865022123119,
+      "timestamp": "2025-08-31T00:02:17.010933"
+    },
+    {
+      "episode": 2,
+      "step": 44,
+      "total_reward": -6.932126898265128,
+      "tracking_reward": -0.6284921117086942,
+      "position_error": 0.6284921117086942,
+      "timestamp": "2025-08-31T00:02:17.212375"
+    },
+    {
+      "episode": 2,
+      "step": 45,
+      "total_reward": -6.941774736121603,
+      "tracking_reward": -0.6275541504553867,
+      "position_error": 0.6275541504553867,
+      "timestamp": "2025-08-31T00:02:17.407853"
+    },
+    {
+      "episode": 2,
+      "step": 46,
+      "total_reward": -6.942683662546123,
+      "tracking_reward": -0.6270274192735973,
+      "position_error": 0.6270274192735973,
+      "timestamp": "2025-08-31T00:02:17.605324"
+    },
+    {
+      "episode": 2,
+      "step": 47,
+      "total_reward": -6.912215616674016,
+      "tracking_reward": -0.6265227224802129,
+      "position_error": 0.6265227224802129,
+      "timestamp": "2025-08-31T00:02:17.796368"
+    },
+    {
+      "episode": 2,
+      "step": 48,
+      "total_reward": -6.9407375909899836,
+      "tracking_reward": -0.6270981092213058,
+      "position_error": 0.6270981092213058,
+      "timestamp": "2025-08-31T00:02:17.977328"
+    },
+    {
+      "episode": 2,
+      "step": 49,
+      "total_reward": -6.944837707254457,
+      "tracking_reward": -0.6277615333530905,
+      "position_error": 0.6277615333530905,
+      "timestamp": "2025-08-31T00:02:18.179786"
+    },
+    {
+      "episode": 2,
+      "step": 50,
+      "total_reward": -6.915409610560131,
+      "tracking_reward": -0.6267893865408171,
+      "position_error": 0.6267893865408171,
+      "timestamp": "2025-08-31T00:02:18.383243"
+    },
+    {
+      "episode": 2,
+      "step": 51,
+      "total_reward": -6.894925818840275,
+      "tracking_reward": -0.6250229685091289,
+      "position_error": 0.6250229685091289,
+      "timestamp": "2025-08-31T00:02:18.580715"
+    },
+    {
+      "episode": 2,
+      "step": 52,
+      "total_reward": -6.893496571286313,
+      "tracking_reward": -0.6248634501915147,
+      "position_error": 0.6248634501915147,
+      "timestamp": "2025-08-31T00:02:18.761231"
+    },
+    {
+      "episode": 2,
+      "step": 53,
+      "total_reward": -6.892959400772423,
+      "tracking_reward": -0.6248369371315367,
+      "position_error": 0.6248369371315367,
+      "timestamp": "2025-08-31T00:02:18.948729"
+    },
+    {
+      "episode": 2,
+      "step": 54,
+      "total_reward": -6.901483648556887,
+      "tracking_reward": -0.6242476803097927,
+      "position_error": 0.6242476803097927,
+      "timestamp": "2025-08-31T00:02:19.117278"
+    },
+    {
+      "episode": 2,
+      "step": 55,
+      "total_reward": -6.89264844097044,
+      "tracking_reward": -0.6235770395850099,
+      "position_error": 0.6235770395850099,
+      "timestamp": "2025-08-31T00:02:19.345670"
+    },
+    {
+      "episode": 2,
+      "step": 56,
+      "total_reward": -6.918337317542987,
+      "tracking_reward": -0.6239357003597532,
+      "position_error": 0.6239357003597532,
+      "timestamp": "2025-08-31T00:02:19.498260"
+    },
+    {
+      "episode": 2,
+      "step": 57,
+      "total_reward": -6.8786308674421575,
+      "tracking_reward": -0.6225564170158823,
+      "position_error": 0.6225564170158823,
+      "timestamp": "2025-08-31T00:02:19.696743"
+    },
+    {
+      "episode": 2,
+      "step": 58,
+      "total_reward": -6.870503941864717,
+      "tracking_reward": -0.6216912297462254,
+      "position_error": 0.6216912297462254,
+      "timestamp": "2025-08-31T00:02:19.881235"
+    },
+    {
+      "episode": 2,
+      "step": 59,
+      "total_reward": -6.875142533477042,
+      "tracking_reward": -0.6208962616192399,
+      "position_error": 0.6208962616192399,
+      "timestamp": "2025-08-31T00:02:20.092669"
+    },
+    {
+      "episode": 2,
+      "step": 60,
+      "total_reward": -6.828547283527317,
+      "tracking_reward": -0.619176696499419,
+      "position_error": 0.619176696499419,
+      "timestamp": "2025-08-31T00:02:20.274378"
+    },
+    {
+      "episode": 2,
+      "step": 61,
+      "total_reward": -6.842076286063293,
+      "tracking_reward": -0.617374365677933,
+      "position_error": 0.617374365677933,
+      "timestamp": "2025-08-31T00:02:20.729411"
+    },
+    {
+      "episode": 2,
+      "step": 62,
+      "total_reward": -6.819151506451419,
+      "tracking_reward": -0.6155964819892111,
+      "position_error": 0.6155964819892111,
+      "timestamp": "2025-08-31T00:02:21.058087"
+    },
+    {
+      "episode": 2,
+      "step": 63,
+      "total_reward": -6.761932193348871,
+      "tracking_reward": -0.6120974451989007,
+      "position_error": 0.6120974451989007,
+      "timestamp": "2025-08-31T00:02:21.228632"
+    },
+    {
+      "episode": 2,
+      "step": 64,
+      "total_reward": -6.738447735880337,
+      "tracking_reward": -0.608607467015389,
+      "position_error": 0.608607467015389,
+      "timestamp": "2025-08-31T00:02:21.392194"
+    },
+    {
+      "episode": 2,
+      "step": 65,
+      "total_reward": -6.693662283500361,
+      "tracking_reward": -0.6034589416954677,
+      "position_error": 0.6034589416954677,
+      "timestamp": "2025-08-31T00:02:21.546779"
+    },
+    {
+      "episode": 2,
+      "step": 66,
+      "total_reward": -6.631977380341059,
+      "tracking_reward": -0.598168214428794,
+      "position_error": 0.598168214428794,
+      "timestamp": "2025-08-31T00:02:21.716645"
+    },
+    {
+      "episode": 2,
+      "step": 67,
+      "total_reward": -6.6051432462356034,
+      "tracking_reward": -0.5929909341742426,
+      "position_error": 0.5929909341742426,
+      "timestamp": "2025-08-31T00:02:21.885872"
+    },
+    {
+      "episode": 2,
+      "step": 68,
+      "total_reward": -6.520460007350418,
+      "tracking_reward": -0.5864996801700902,
+      "position_error": 0.5864996801700902,
+      "timestamp": "2025-08-31T00:02:22.059409"
+    },
+    {
+      "episode": 2,
+      "step": 69,
+      "total_reward": -6.476675802445058,
+      "tracking_reward": -0.5801414887103543,
+      "position_error": 0.5801414887103543,
+      "timestamp": "2025-08-31T00:02:22.212074"
+    },
+    {
+      "episode": 2,
+      "step": 70,
+      "total_reward": -6.409766361154274,
+      "tracking_reward": -0.5745429469690354,
+      "position_error": 0.5745429469690354,
+      "timestamp": "2025-08-31T00:02:22.411508"
+    },
+    {
+      "episode": 2,
+      "step": 71,
+      "total_reward": -6.335313484984592,
+      "tracking_reward": -0.5683994902190361,
+      "position_error": 0.5683994902190361,
+      "timestamp": "2025-08-31T00:02:22.610935"
+    },
+    {
+      "episode": 2,
+      "step": 72,
+      "total_reward": -6.316105129398396,
+      "tracking_reward": -0.5644138915135495,
+      "position_error": 0.5644138915135495,
+      "timestamp": "2025-08-31T00:02:22.795171"
+    },
+    {
+      "episode": 2,
+      "step": 73,
+      "total_reward": -6.296434561250115,
+      "tracking_reward": -0.5636048968605957,
+      "position_error": 0.5636048968605957,
+      "timestamp": "2025-08-31T00:02:22.979252"
+    },
+    {
+      "episode": 2,
+      "step": 74,
+      "total_reward": -6.269711022993301,
+      "tracking_reward": -0.5620421613702375,
+      "position_error": 0.5620421613702375,
+      "timestamp": "2025-08-31T00:02:23.169646"
+    },
+    {
+      "episode": 2,
+      "step": 75,
+      "total_reward": -6.258066385514356,
+      "tracking_reward": -0.5605334218061738,
+      "position_error": 0.5605334218061738,
+      "timestamp": "2025-08-31T00:02:23.312263"
+    },
+    {
+      "episode": 2,
+      "step": 76,
+      "total_reward": -6.239677405478747,
+      "tracking_reward": -0.5602800454248591,
+      "position_error": 0.5602800454248591,
+      "timestamp": "2025-08-31T00:02:23.520100"
+    },
+    {
+      "episode": 2,
+      "step": 77,
+      "total_reward": -6.230351462583071,
+      "tracking_reward": -0.5575536196755757,
+      "position_error": 0.5575536196755757,
+      "timestamp": "2025-08-31T00:02:23.682664"
+    },
+    {
+      "episode": 2,
+      "step": 78,
+      "total_reward": -6.223487065103774,
+      "tracking_reward": -0.5564557403407427,
+      "position_error": 0.5564557403407427,
+      "timestamp": "2025-08-31T00:02:23.828275"
+    },
+    {
+      "episode": 2,
+      "step": 79,
+      "total_reward": -6.202453983870775,
+      "tracking_reward": -0.5556015006747473,
+      "position_error": 0.5556015006747473,
+      "timestamp": "2025-08-31T00:02:24.046846"
+    },
+    {
+      "episode": 2,
+      "step": 80,
+      "total_reward": -6.216434377476522,
+      "tracking_reward": -0.5553625303092776,
+      "position_error": 0.5553625303092776,
+      "timestamp": "2025-08-31T00:02:24.237708"
+    },
+    {
+      "episode": 2,
+      "step": 81,
+      "total_reward": -6.217080892738663,
+      "tracking_reward": -0.5556666586048084,
+      "position_error": 0.5556666586048084,
+      "timestamp": "2025-08-31T00:02:24.418053"
+    },
+    {
+      "episode": 2,
+      "step": 82,
+      "total_reward": -6.200275316151684,
+      "tracking_reward": -0.5574535971167591,
+      "position_error": 0.5574535971167591,
+      "timestamp": "2025-08-31T00:02:24.584610"
+    },
+    {
+      "episode": 2,
+      "step": 83,
+      "total_reward": -6.22251544665926,
+      "tracking_reward": -0.5580023995841326,
+      "position_error": 0.5580023995841326,
+      "timestamp": "2025-08-31T00:02:24.729219"
+    },
+    {
+      "episode": 2,
+      "step": 84,
+      "total_reward": -6.259846430638416,
+      "tracking_reward": -0.5593582123128847,
+      "position_error": 0.5593582123128847,
+      "timestamp": "2025-08-31T00:02:24.888791"
+    },
+    {
+      "episode": 2,
+      "step": 85,
+      "total_reward": -6.244476867550665,
+      "tracking_reward": -0.5594872773240057,
+      "position_error": 0.5594872773240057,
+      "timestamp": "2025-08-31T00:02:25.062328"
+    },
+    {
+      "episode": 2,
+      "step": 86,
+      "total_reward": -6.261728855383205,
+      "tracking_reward": -0.5585669236813677,
+      "position_error": 0.5585669236813677,
+      "timestamp": "2025-08-31T00:02:25.274760"
+    },
+    {
+      "episode": 2,
+      "step": 87,
+      "total_reward": -6.199888514743823,
+      "tracking_reward": -0.5557951021669045,
+      "position_error": 0.5557951021669045,
+      "timestamp": "2025-08-31T00:02:25.408453"
+    },
+    {
+      "episode": 2,
+      "step": 88,
+      "total_reward": -6.207018407659064,
+      "tracking_reward": -0.5540253754259903,
+      "position_error": 0.5540253754259903,
+      "timestamp": "2025-08-31T00:02:25.628812"
+    },
+    {
+      "episode": 2,
+      "step": 89,
+      "total_reward": -6.1994585885958795,
+      "tracking_reward": -0.5540594326170978,
+      "position_error": 0.5540594326170978,
+      "timestamp": "2025-08-31T00:02:25.781443"
+    },
+    {
+      "episode": 2,
+      "step": 90,
+      "total_reward": -6.22700508712138,
+      "tracking_reward": -0.5557889760792826,
+      "position_error": 0.5557889760792826,
+      "timestamp": "2025-08-31T00:02:25.944965"
+    },
+    {
+      "episode": 2,
+      "step": 91,
+      "total_reward": -6.207093038332387,
+      "tracking_reward": -0.5571612327196741,
+      "position_error": 0.5571612327196741,
+      "timestamp": "2025-08-31T00:02:26.079606"
+    },
+    {
+      "episode": 2,
+      "step": 92,
+      "total_reward": -6.188125127330853,
+      "tracking_reward": -0.5566595191470706,
+      "position_error": 0.5566595191470706,
+      "timestamp": "2025-08-31T00:02:26.281068"
+    },
+    {
+      "episode": 2,
+      "step": 93,
+      "total_reward": -6.202437945159096,
+      "tracking_reward": -0.5569525991203585,
+      "position_error": 0.5569525991203585,
+      "timestamp": "2025-08-31T00:02:26.434657"
+    },
+    {
+      "episode": 2,
+      "step": 94,
+      "total_reward": -6.17083808544522,
+      "tracking_reward": -0.5558450316456496,
+      "position_error": 0.5558450316456496,
+      "timestamp": "2025-08-31T00:02:26.588246"
+    },
+    {
+      "episode": 2,
+      "step": 95,
+      "total_reward": -6.151289254687168,
+      "tracking_reward": -0.5536503263470843,
+      "position_error": 0.5536503263470843,
+      "timestamp": "2025-08-31T00:02:26.953269"
+    },
+    {
+      "episode": 2,
+      "step": 96,
+      "total_reward": -6.15914167230348,
+      "tracking_reward": -0.5513240928943595,
+      "position_error": 0.5513240928943595,
+      "timestamp": "2025-08-31T00:02:27.119824"
+    },
+    {
+      "episode": 2,
+      "step": 97,
+      "total_reward": -6.1472212478083845,
+      "tracking_reward": -0.5490939842305056,
+      "position_error": 0.5490939842305056,
+      "timestamp": "2025-08-31T00:02:27.250475"
+    },
+    {
+      "episode": 2,
+      "step": 98,
+      "total_reward": -6.107703662125907,
+      "tracking_reward": -0.5476779100600392,
+      "position_error": 0.5476779100600392,
+      "timestamp": "2025-08-31T00:02:27.444954"
+    },
+    {
+      "episode": 2,
+      "step": 99,
+      "total_reward": -6.145895324748172,
+      "tracking_reward": -0.5484395953619036,
+      "position_error": 0.5484395953619036,
+      "timestamp": "2025-08-31T00:02:27.611508"
+    }
+  ],
+  "episode_summaries": [
+    {
+      "episode": 1,
+      "total_reward": {
+        "sum": 835.1264311008938,
+        "min": -8.245954583966562,
+        "max": 137.4238245882205,
+        "mean": 8.351264311008936,
+        "std": 23.103668758123035,
+        "count": 100
+      },
+      "tracking_reward": {
+        "sum": 148.98554194793698,
+        "min": -0.7840717428884404,
+        "max": 99.81055213718909,
+        "mean": 1.4898554194793696,
+        "std": 14.0462755815889,
+        "count": 100
+      },
+      "timestamp": "2025-08-31T00:02:06.140004"
+    },
+    {
+      "episode": 2,
+      "total_reward": {
+        "sum": -633.3401736928485,
+        "min": -7.3065350641918085,
+        "max": -3.86683078586562,
+        "mean": -6.33340173692848,
+        "std": 0.782495122954622,
+        "count": 100
+      },
+      "tracking_reward": {
+        "sum": -56.78561310122318,
+        "min": -0.6640533477100445,
+        "max": -0.31934885952696973,
+        "mean": -0.5678561310122319,
+        "std": 0.078135669523569,
+        "count": 100
+      },
+      "timestamp": "2025-08-31T00:02:27.640431"
+    }
+  ],
+  "aggregated_stats": {
+    "total_rewards": {
+      "values": [
+        835.1264311008938,
+        -633.3401736928485
+      ],
+      "min": [
+        835.1264311008938,
+        -633.3401736928485
+      ],
+      "max": [
+        835.1264311008938,
+        835.1264311008938
+      ],
+      "mean": [
+        835.1264311008938,
+        100.89312870402267
+      ]
+    },
+    "tracking_rewards": {
+      "values": [
+        148.98554194793698,
+        -56.78561310122318
+      ],
+      "min": [
+        148.98554194793698,
+        -56.78561310122318
+      ],
+      "max": [
+        148.98554194793698,
+        148.98554194793698
+      ],
+      "mean": [
+        148.98554194793698,
+        46.0999644233569
+      ]
+    }
+  },
+  "metadata": {
+    "start_time": "2025-08-31T00:00:15.607155",
+    "status": "completed",
+    "current_episode": 2,
+    "total_episodes": 0,
+    "end_time": "2025-08-31T00:02:32.060374"
+  }
+}

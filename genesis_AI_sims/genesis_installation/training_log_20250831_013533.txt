@@ -1,0 +1,277 @@
+? Current working directory: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation
+ Log will be saved to: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation\training_log_20250831_013533.txt
+
+? Initializing Live Training Monitor...
+? Live Training Monitor started - Console-based monitoring active!
+? Real-time statistics will be displayed in console for threading compatibility
+? Console-based monitoring active - Enhanced live stats in console
+? Live Monitor launched - Real-time graphs available!
+? Real-time Min/Mean/Max statistics will be displayed every few episodes
+================================================================================
+
+? Initializing TensorBoard Logger with WebSocket Streaming...
+?? WebSocket TensorBoard not available, using standard version
+? TensorBoard started automatically on port 6006
+? Live dashboard: http://localhost:6006
+? TensorBoard opened in browser automatically
+? TensorBoard auto-started and streaming live!
+? TensorBoard logging initialized: tensorboard_logs\genesis_franka_rl_20250831_013621
+? Access at: http://localhost:6006
+? TensorBoard logging initialized: tensorboard_logs\genesis_franka_rl_20250831_013621
+? View live training: tensorboard --logdir=tensorboard_logs
+? Access at: http://localhost:6006
+
+? PURE ENVIRONMENT-DRIVEN LEARNING - NO REFERENCE TRAJECTORY!
+? Robot will learn through goal-based exploration and discovery
+? Goals will be dynamically generated based on workspace exploration
+? Curriculum learning: difficulty increases as robot improves
+? Pure environment learning initialized
+? Dynamic goal-based learning with curriculum progression
+? Robot will discover optimal behaviors through exploration
+? PURE ENVIRONMENT-DRIVEN LEARNING ENVIRONMENT CREATED!
+? Goal-based learning with dynamic curriculum
+? Robot will explore and discover optimal behaviors
+? No predefined trajectory - pure environment feedback!
+? Hyperparameters logged to TensorBoard
+State dimension: 44
+Action dimension: 9
+? Pure environment learning - dynamic goal-based rewards
+? No predefined trajectory - robot will explore and discover!
+
+=== TESTING CLEAN EXIT - 1 EPISODE ===
+? Testing Genesis exit behavior with natural completion
+? Pure Environment-Driven Learning: NO REFERENCE TRAJECTORY
+? Goal-Based Learning: Robot discovers optimal behaviors
+? Exploration: Agent learns through trial and discovery
+? Curriculum: Difficulty adapts based on performance
+? TEST: Single episode to verify clean exit
+? GOAL VISUALIZATION:
+[GREEN SPHERES] Dynamic goals: Current target positions
+[BLUE TUBES] Training trajectory: Robot's discovered path
+[YELLOW SPHERE] Current position: Robot's end-effector
+[COLORED TRAILS] Exploration paths: Different episode attempts
+? TEST RUN: Will run 1 episode to verify clean exit (no time limit)
+? This test verifies Genesis exits properly without hanging
+[PERMANENT] Goal visualization: DYNAMIC GREEN SPHERES for current goals
+  Pure Env Step 0: goal_dist=0.889, goal_reward=-4.44, total_reward=0.35
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.46156009 -0.0081962   0.66394107]
+  Step 0: goal_dist=0.889, reward=0.345
+  Initial EE position: [-0.46156009 -0.0081962   0.66394107]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 1, Step 0: PERSISTENT 3D TUBES - Total trajectory: 1
+Episode 1, Step 10: PERSISTENT 3D TUBES - Total trajectory: 11
+Episode 1, Step 20: PERSISTENT 3D TUBES - Total trajectory: 21
+Episode 1, Step 30: PERSISTENT 3D TUBES - Total trajectory: 31
+Episode 1, Step 40: PERSISTENT 3D TUBES - Total trajectory: 41
+  Pure Env Step 50: goal_dist=0.760, goal_reward=-3.80, total_reward=-3.95
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.2989207   0.11114866  0.88431068]
+  Step 50: goal_dist=0.760, reward=-3.945
+  Step 50 EE position: [-0.2989207   0.11114866  0.88431068]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 1, Step 50: PERSISTENT 3D TUBES - Total trajectory: 51
+Episode 1, Step 60: PERSISTENT 3D TUBES - Total trajectory: 61
+Episode 1, Step 70: PERSISTENT 3D TUBES - Total trajectory: 71
+Episode 1, Step 80: PERSISTENT 3D TUBES - Total trajectory: 81
+Episode 1, Step 90: PERSISTENT 3D TUBES - Total trajectory: 91
+  Pure Env Step 100: goal_dist=0.821, goal_reward=-4.10, total_reward=-4.22
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.35910989  0.00602892  0.84463432]
+  Step 100: goal_dist=0.821, reward=-4.220
+  Step 100 EE position: [-0.35910989  0.00602892  0.84463432]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 1, Step 100: PERSISTENT 3D TUBES - Total trajectory: 101
+Episode 1, Step 110: PERSISTENT 3D TUBES - Total trajectory: 111
+Episode 1, Step 120: PERSISTENT 3D TUBES - Total trajectory: 121
+Episode 1, Step 130: PERSISTENT 3D TUBES - Total trajectory: 131
+Episode 1, Step 140: PERSISTENT 3D TUBES - Total trajectory: 141
+  Pure Env Step 150: goal_dist=0.741, goal_reward=-3.71, total_reward=-3.84
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.20515975 -0.06802131  0.93333648]
+  Step 150: goal_dist=0.741, reward=-3.843
+  Step 150 EE position: [-0.20515975 -0.06802131  0.93333648]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 1, Step 150: PERSISTENT 3D TUBES - Total trajectory: 151
+Episode 1, Step 160: PERSISTENT 3D TUBES - Total trajectory: 161
+Episode 1, Step 170: PERSISTENT 3D TUBES - Total trajectory: 171
+Episode 1, Step 180: PERSISTENT 3D TUBES - Total trajectory: 181
+Episode 1, Step 190: PERSISTENT 3D TUBES - Total trajectory: 191
+Episode 1 - Total Reward: -778.29, Tracking Reward: -153.00, Avg Reward (last 10): -778.29, Trajectory Points: 200
+  [LEARNING] Noise: 0.1101, LR: 9.95e-06, Buffer: 200, Avg Position Error: 0.7650
+  [SUCCESS] Trajectory recorded: 200 points
+  [MOVEMENT] Total movement: 0.306 units
+  [SUCCESS] Trajectory recorded: 200 points
+  [GOALS] Goals reached this episode: 0
+  [DISTANCE] Current goal distance: 0.817 units
+
+? EPISODE 1 COMPLETED
+============================================================
+? Current Episode Results:
+   ? Total Reward: -778.2938
+   ? Tracking Reward: -153.0021
+   ? Position Error: 0.7650
+
+? Overall Training Progress:
+   Episodes Completed: 1
+   Best Total Reward: -778.2938
+   Worst Total Reward: -778.2938
+   Average Total Reward: -778.2938
+   Best Tracking Reward: -153.0021
+   Average Tracking Reward: -153.0021
+
+? TensorBoard-Equivalent Statistics (Rolling Window):
+   Min Total Reward: -778.2938
+   Mean Total Reward: -778.2938
+   Max Total Reward: -778.2938
+   Min Tracking Reward: -153.0021
+   Mean Tracking Reward: -153.0021
+   Max Tracking Reward: -153.0021
+============================================================
+  Pure Env Step 0: goal_dist=0.865, goal_reward=-4.33, total_reward=-4.49
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.42192919 -0.01832895  0.75905855]
+  Step 0: goal_dist=0.865, reward=-4.490
+  Initial EE position: [-0.42192919 -0.01832895  0.75905855]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 2, Step 0: PERSISTENT 3D TUBES - Total trajectory: 1
+Episode 2, Step 10: PERSISTENT 3D TUBES - Total trajectory: 11
+Episode 2, Step 20: PERSISTENT 3D TUBES - Total trajectory: 21
+Episode 2, Step 30: PERSISTENT 3D TUBES - Total trajectory: 31
+Episode 2, Step 40: PERSISTENT 3D TUBES - Total trajectory: 41
+  Pure Env Step 50: goal_dist=0.832, goal_reward=-4.16, total_reward=-4.28
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.33806433 -0.08420995  0.85694144]
+  Step 50: goal_dist=0.832, reward=-4.284
+  Step 50 EE position: [-0.33806433 -0.08420995  0.85694144]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 2, Step 50: PERSISTENT 3D TUBES - Total trajectory: 51
+Episode 2, Step 60: PERSISTENT 3D TUBES - Total trajectory: 61
+Episode 2, Step 70: PERSISTENT 3D TUBES - Total trajectory: 71
+Episode 2, Step 80: PERSISTENT 3D TUBES - Total trajectory: 81
+Episode 2, Step 90: PERSISTENT 3D TUBES - Total trajectory: 91
+  Pure Env Step 100: goal_dist=0.815, goal_reward=-4.07, total_reward=-4.20
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.30129493 -0.10045499  0.88590556]
+  Step 100: goal_dist=0.815, reward=-4.195
+  Step 100 EE position: [-0.30129493 -0.10045499  0.88590556]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 2, Step 100: PERSISTENT 3D TUBES - Total trajectory: 101
+Episode 2, Step 110: PERSISTENT 3D TUBES - Total trajectory: 111
+Episode 2, Step 120: PERSISTENT 3D TUBES - Total trajectory: 121
+Episode 2, Step 130: PERSISTENT 3D TUBES - Total trajectory: 131
+Episode 2, Step 140: PERSISTENT 3D TUBES - Total trajectory: 141
+  Pure Env Step 150: goal_dist=0.811, goal_reward=-4.06, total_reward=-4.18
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.32569271 -0.03303591  0.87760128]
+  Step 150: goal_dist=0.811, reward=-4.179
+  Step 150 EE position: [-0.32569271 -0.03303591  0.87760128]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 2, Step 150: PERSISTENT 3D TUBES - Total trajectory: 151
+Episode 2, Step 160: PERSISTENT 3D TUBES - Total trajectory: 161
+Episode 2, Step 170: PERSISTENT 3D TUBES - Total trajectory: 171
+Episode 2, Step 180: PERSISTENT 3D TUBES - Total trajectory: 181
+Episode 2, Step 190: PERSISTENT 3D TUBES - Total trajectory: 191
+Episode 2 - Total Reward: -825.03, Tracking Reward: -159.91, Avg Reward (last 10): -801.66, Trajectory Points: 200
+  [LEARNING] Noise: 0.0500, LR: 9.85e-06, Buffer: 400, Avg Position Error: 0.7996
+  [SUCCESS] Trajectory recorded: 200 points
+  [MOVEMENT] Total movement: 0.114 units
+  [SUCCESS] Trajectory recorded: 200 points
+  [GOALS] Goals reached this episode: 0
+  [DISTANCE] Current goal distance: 0.838 units
+
+=== TEST EPISODE COMPLETE ===
+? Single episode test completed successfully!
+? Now testing Genesis cleanup and exit behavior...
+Final average reward: -801.66
+
+? Generating Final Training Evidence...
+
+? Generating Final Training Evidence...
+
+? EPISODE 2 COMPLETED
+============================================================
+? Current Episode Results:
+   ? Total Reward: -825.0292
+   ? Tracking Reward: -159.9111
+   ? Position Error: 0.7996
+
+? Overall Training Progress:
+   Episodes Completed: 2
+   Best Total Reward: -778.2938
+   Worst Total Reward: -825.0292
+   Average Total Reward: -801.6615
+   Best Tracking Reward: -153.0021
+   Average Tracking Reward: -156.4566
+
+? TensorBoard-Equivalent Statistics (Rolling Window):
+   Min Total Reward: -825.0292
+   Mean Total Reward: -801.6615
+   Max Total Reward: -778.2938
+   Min Tracking Reward: -159.9111
+   Mean Tracking Reward: -156.4566
+   Max Tracking Reward: -153.0021
+============================================================
+? Final evidence plots saved: training_metrics\final_training_evidence_20250831_013738.png
+? FINAL TRAINING METRICS:
+  Episodes Completed: 1
+  Total Reward - Min: -778.29, Max: -778.29, Mean: -778.29
+  Tracking Reward - Min: -153.00, Max: -153.00, Mean: -153.00
+  Improvement: 0.00
+? Evidence saved to: training_metrics/
+? Summary file: training_metrics\training_summary_20250831_013738.json
+? Complete data: training_metrics\complete_training_data_20250831_013738.json
+
+? Finalizing TensorBoard logs...
+? TensorBoard logging completed
+? Stopping TensorBoard before Genesis cleanup...
+? TensorBoard stopped cleanly
+? TensorBoard results saved in: tensorboard_logs
+? Training results plot saved successfully to: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation\training_results.png
+? File size: 24292 bytes
+
+=== SINGLE EPISODE TEST COMPLETE ===
+? Skipping final demonstration - testing exit behavior only
+? Focus: Verify Genesis cleanup without hanging
+Final demonstration reward: 0.00
+Final goals maintained as GREEN SPHERES
+
+=== PURE ENVIRONMENT LEARNING VISUALIZATION SUMMARY ===
+[GREEN SPHERES] Dynamic goals: Current and available targets
+[BRIGHT GREEN POINTS] Final trained goal-reaching trajectory (discovered path)
+[BLUE TRAILS] Training exploration trajectories (learning process)
+[COLORED TRAILS] Previous episode exploration attempts (learning history)
+? ALL GOAL-BASED LEARNING - no disappearing targets!
+? PURE DISCOVERY - robot learned through exploration!
+
+=== Final Training Summary ===
+Episodes completed: 2
+Best episode: 1 (reward: -778.29)
+Final 10-episode average: -801.66
+Learning improvement: -23.37
+Final exploration noise: 0.0498
+Final learning rate: 9.85e-06
+
+? LIVE MONITORING EVIDENCE:
+  ? Total Reward Statistics:
+    - Min: -778.29
+    - Max: -778.29
+    - Mean: -778.29
+    - Final: -778.29
+    - Improvement: 0.00
+  ? Tracking Reward Statistics:
+    - Min: -153.00
+    - Max: -153.00
+    - Mean: -153.00
+    - Final: -153.00
+  ? Position Error Statistics:
+    - Min: 0.7650
+    - Max: 0.7650
+    - Mean: 0.7650
+? Complete evidence saved in: training_metrics/ directory
+
+? TENSORBOARD EVIDENCE:
+  ? Professional ML Experiment Tracking Completed
+  ? All metrics logged with step-by-step detail
+  ? Hyperparameters, gradients, and weights tracked
+  ? View live dashboard: tensorboard --logdir=tensorboard_logs
+  ? Access at: http://localhost:6006
+  ? TensorBoard logs saved in: tensorboard_logs/ directory
+
+=== Enhanced training session completed at 2025-08-31 01:37:41.379377 ===
+Log saved to: training_log_20250831_013533.txt
+? Generated plot files: ['training_results.png']
+?? No MP4 video files found in current directory
+? Auto-closing Genesis simulation...

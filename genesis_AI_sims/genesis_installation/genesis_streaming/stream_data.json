@@ -1,0 +1,257 @@
+{
+  "current_episode": 4,
+  "current_step": 9,
+  "latest_metrics": {
+    "total_reward": -0.9447466716557759,
+    "tracking_reward": null,
+    "position_error": 0.07682457356865235,
+    "timestamp": "2025-08-31T01:46:08.072100"
+  },
+  "episode_history": [
+    {
+      "episode": 0,
+      "total_reward": 3.2928250729407997,
+      "episode_length": 10,
+      "tracking_reward": null,
+      "timestamp": "2025-08-31T01:45:59.087814"
+    },
+    {
+      "episode": 1,
+      "total_reward": 3.8502825889928936,
+      "episode_length": 10,
+      "tracking_reward": null,
+      "timestamp": "2025-08-31T01:46:01.262576"
+    },
+    {
+      "episode": 2,
+      "total_reward": -4.1622346772268894,
+      "episode_length": 10,
+      "tracking_reward": null,
+      "timestamp": "2025-08-31T01:46:03.423803"
+    },
+    {
+      "episode": 3,
+      "total_reward": 1.788566806851816,
+      "episode_length": 10,
+      "tracking_reward": null,
+      "timestamp": "2025-08-31T01:46:06.001138"
+    },
+    {
+      "episode": 4,
+      "total_reward": 10.467047699137295,
+      "episode_length": 10,
+      "tracking_reward": null,
+      "timestamp": "2025-08-31T01:46:08.174058"
+    }
+  ],
+  "realtime_updates": [
+    {
+      "message": "Episode 0, Step 4: Reward=-0.435",
+      "timestamp": "2025-08-31T01:45:58.466226"
+    },
+    {
+      "message": "Episode 0, Step 5: Reward=0.838",
+      "timestamp": "2025-08-31T01:45:58.568072"
+    },
+    {
+      "message": "Episode 0, Step 6: Reward=-1.549",
+      "timestamp": "2025-08-31T01:45:58.671491"
+    },
+    {
+      "message": "Episode 0, Step 7: Reward=-0.637",
+      "timestamp": "2025-08-31T01:45:58.773264"
+    },
+    {
+      "message": "Episode 0, Step 8: Reward=0.624",
+      "timestamp": "2025-08-31T01:45:58.875300"
+    },
+    {
+      "message": "Episode 0, Step 9: Reward=-0.125",
+      "timestamp": "2025-08-31T01:45:58.986142"
+    },
+    {
+      "message": "Episode 0 completed: Reward=3.293",
+      "timestamp": "2025-08-31T01:45:59.087849"
+    },
+    {
+      "message": "Episode 1, Step 0: Reward=-0.436",
+      "timestamp": "2025-08-31T01:46:00.097567"
+    },
+    {
+      "message": "Episode 1, Step 1: Reward=2.555",
+      "timestamp": "2025-08-31T01:46:00.258742"
+    },
+    {
+      "message": "Episode 1, Step 2: Reward=-0.158",
+      "timestamp": "2025-08-31T01:46:00.410334"
+    },
+    {
+      "message": "Episode 1, Step 3: Reward=-0.930",
+      "timestamp": "2025-08-31T01:46:00.529125"
+    },
+    {
+      "message": "Episode 1, Step 4: Reward=-0.301",
+      "timestamp": "2025-08-31T01:46:00.631034"
+    },
+    {
+      "message": "Episode 1, Step 5: Reward=0.943",
+      "timestamp": "2025-08-31T01:46:00.732631"
+    },
+    {
+      "message": "Episode 1, Step 6: Reward=-0.812",
+      "timestamp": "2025-08-31T01:46:00.834331"
+    },
+    {
+      "message": "Episode 1, Step 7: Reward=1.325",
+      "timestamp": "2025-08-31T01:46:00.938932"
+    },
+    {
+      "message": "Episode 1, Step 8: Reward=1.976",
+      "timestamp": "2025-08-31T01:46:01.041146"
+    },
+    {
+      "message": "Episode 1, Step 9: Reward=0.823",
+      "timestamp": "2025-08-31T01:46:01.156456"
+    },
+    {
+      "message": "Episode 1 completed: Reward=3.850",
+      "timestamp": "2025-08-31T01:46:01.262602"
+    },
+    {
+      "message": "Episode 2, Step 0: Reward=1.084",
+      "timestamp": "2025-08-31T01:46:02.268003"
+    },
+    {
+      "message": "Episode 2, Step 1: Reward=0.991",
+      "timestamp": "2025-08-31T01:46:02.371361"
+    },
+    {
+      "message": "Episode 2, Step 2: Reward=0.201",
+      "timestamp": "2025-08-31T01:46:02.473643"
+    },
+    {
+      "message": "Episode 2, Step 3: Reward=-0.190",
+      "timestamp": "2025-08-31T01:46:02.582490"
+    },
+    {
+      "message": "Episode 2, Step 4: Reward=1.522",
+      "timestamp": "2025-08-31T01:46:02.715857"
+    },
+    {
+      "message": "Episode 2, Step 5: Reward=-1.099",
+      "timestamp": "2025-08-31T01:46:02.862228"
+    },
+    {
+      "message": "Episode 2, Step 6: Reward=1.108",
+      "timestamp": "2025-08-31T01:46:03.001402"
+    },
+    {
+      "message": "Episode 2, Step 7: Reward=0.838",
+      "timestamp": "2025-08-31T01:46:03.113555"
+    },
+    {
+      "message": "Episode 2, Step 8: Reward=-0.864",
+      "timestamp": "2025-08-31T01:46:03.219241"
+    },
+    {
+      "message": "Episode 2, Step 9: Reward=-0.935",
+      "timestamp": "2025-08-31T01:46:03.321591"
+    },
+    {
+      "message": "Episode 2 completed: Reward=-4.162",
+      "timestamp": "2025-08-31T01:46:03.423825"
+    },
+    {
+      "message": "Episode 3, Step 0: Reward=-0.403",
+      "timestamp": "2025-08-31T01:46:04.970365"
+    },
+    {
+      "message": "Episode 3, Step 1: Reward=-0.839",
+      "timestamp": "2025-08-31T01:46:05.072232"
+    },
+    {
+      "message": "Episode 3, Step 2: Reward=1.929",
+      "timestamp": "2025-08-31T01:46:05.174341"
+    },
+    {
+      "message": "Episode 3, Step 3: Reward=1.954",
+      "timestamp": "2025-08-31T01:46:05.278750"
+    },
+    {
+      "message": "Episode 3, Step 4: Reward=-1.345",
+      "timestamp": "2025-08-31T01:46:05.381636"
+    },
+    {
+      "message": "Episode 3, Step 5: Reward=0.552",
+      "timestamp": "2025-08-31T01:46:05.484436"
+    },
+    {
+      "message": "Episode 3, Step 6: Reward=-0.925",
+      "timestamp": "2025-08-31T01:46:05.586737"
+    },
+    {
+      "message": "Episode 3, Step 7: Reward=-0.335",
+      "timestamp": "2025-08-31T01:46:05.689005"
+    },
+    {
+      "message": "Episode 3, Step 8: Reward=-0.017",
+      "timestamp": "2025-08-31T01:46:05.791530"
+    },
+    {
+      "message": "Episode 3, Step 9: Reward=0.159",
+      "timestamp": "2025-08-31T01:46:05.898080"
+    },
+    {
+      "message": "Episode 3 completed: Reward=1.789",
+      "timestamp": "2025-08-31T01:46:06.001162"
+    },
+    {
+      "message": "Episode 4, Step 0: Reward=0.445",
+      "timestamp": "2025-08-31T01:46:07.078139"
+    },
+    {
+      "message": "Episode 4, Step 1: Reward=0.311",
+      "timestamp": "2025-08-31T01:46:07.206110"
+    },
+    {
+      "message": "Episode 4, Step 2: Reward=-1.191",
+      "timestamp": "2025-08-31T01:46:07.324909"
+    },
+    {
+      "message": "Episode 4, Step 3: Reward=0.836",
+      "timestamp": "2025-08-31T01:46:07.453455"
+    },
+    {
+      "message": "Episode 4, Step 4: Reward=-0.860",
+      "timestamp": "2025-08-31T01:46:07.555582"
+    },
+    {
+      "message": "Episode 4, Step 5: Reward=0.656",
+      "timestamp": "2025-08-31T01:46:07.658077"
+    },
+    {
+      "message": "Episode 4, Step 6: Reward=0.062",
+      "timestamp": "2025-08-31T01:46:07.763626"
+    },
+    {
+      "message": "Episode 4, Step 7: Reward=0.117",
+      "timestamp": "2025-08-31T01:46:07.866352"
+    },
+    {
+      "message": "Episode 4, Step 8: Reward=-0.706",
+      "timestamp": "2025-08-31T01:46:07.969375"
+    },
+    {
+      "message": "Episode 4, Step 9: Reward=-0.945",
+      "timestamp": "2025-08-31T01:46:08.072127"
+    },
+    {
+      "message": "Episode 4 completed: Reward=10.467",
+      "timestamp": "2025-08-31T01:46:08.174094"
+    }
+  ],
+  "genesis_info": {
+    "scene_active": true,
+    "viewer_status": "completed"
+  }
+}

@@ -1,0 +1,25 @@
+🚀 CORRECTED PURE ENVIRONMENT TRAINING - 2025-08-31 09:39:49.742212
+📝 Log file: corrected_training_log_20250831_093949.txt
+
+============================================================
+🚀 CORRECTED PURE ENVIRONMENT TRAINING - TEST VERSION
+============================================================
+🤖 Robot loaded with 9 joints
+🎯 Action space: (9,)
+📍 Generated 35 reachable goals
+🎯 Environment initialized with 35 goals
+📏 Workspace: center=[0.5 0.  0.5], radius=0.8
+🔄 Environment reset - Goal: [ 0.28284271 -0.28284271  0.3       ]
+📊 State dimension: 28
+🎮 Action dimension: 9
+🤖 PPO-DDPG Agent initialized on cuda
+📊 Actor LR: 0.0001, Critic LR: 0.001
+🎯 PPO Clip ε: 0.2, Entropy: 0.01
+
+🏃 Starting training for 3 episodes...
+🔄 Environment reset - Goal: [ 0.28284271 -0.28284271  0.7       ]
+
+📈 Episode 1/3
+  Step 20: reward=-1.09, goal_dist=0.543, goals=0
+  Step 40: reward=-1.05, goal_dist=0.518, goals=0
+  Step 60: reward=-1.06, goal_dist=0.529, goals=0

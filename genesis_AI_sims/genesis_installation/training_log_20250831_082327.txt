@@ -1,0 +1,183 @@
+? Current working directory: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation
+? Log will be saved to: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation\training_log_20250831_082327.txt
+
+? PURE ENVIRONMENT-DRIVEN LEARNING - NO REFERENCE TRAJECTORY!
+? Robot will learn through goal-based exploration and discovery
+? Goals will be dynamically generated based on workspace exploration
+? Curriculum learning: difficulty increases as robot improves
+? Pure environment learning initialized
+? Dynamic goal-based learning with curriculum progression
+? Robot will discover optimal behaviors through exploration
+? PURE ENVIRONMENT-DRIVEN LEARNING ENVIRONMENT CREATED!
+? Goal-based learning with dynamic curriculum
+? Robot will explore and discover optimal behaviors
+? No predefined trajectory - pure environment feedback!
+? Training hyperparameters configured
+? Algorithm: DDPG_Pure_Environment
+? Learning rate: 1e-05
+? Batch size: 64
+State dimension: 44
+Action dimension: 9
+? Pure environment learning - dynamic goal-based rewards
+? No predefined trajectory - robot will explore and discover!
+
+=== TESTING CLEAN EXIT - 1 EPISODE ===
+? Testing Genesis exit behavior with natural completion
+? Pure Environment-Driven Learning: NO REFERENCE TRAJECTORY
+? Goal-Based Learning: Robot discovers optimal behaviors
+? Exploration: Agent learns through trial and discovery
+? Curriculum: Difficulty adapts based on performance
+? TEST: Single episode to verify clean exit
+? GOAL VISUALIZATION:
+[GREEN SPHERES] Dynamic goals: Current target positions
+[BLUE TUBES] Training trajectory: Robot's discovered path
+[YELLOW SPHERE] Current position: Robot's end-effector
+[COLORED TRAILS] Exploration paths: Different episode attempts
+? TEST RUN: Will run 1 episode to verify clean exit (no time limit)
+? This test verifies Genesis exits properly without hanging
+[PERMANENT] Goal visualization: DYNAMIC GREEN SPHERES for current goals
+  Pure Env Step 0: goal_dist=0.895, goal_reward=-4.47, total_reward=0.44
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.4689854  -0.00657915  0.65330213]
+  Step 0: goal_dist=0.895, reward=0.442
+  Initial EE position: [-0.4689854  -0.00657915  0.65330213]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 1, Step 0: PERSISTENT 3D TUBES - Total trajectory: 1
+Episode 1, Step 10: PERSISTENT 3D TUBES - Total trajectory: 11
+Episode 1, Step 20: PERSISTENT 3D TUBES - Total trajectory: 21
+Episode 1, Step 30: PERSISTENT 3D TUBES - Total trajectory: 31
+Episode 1, Step 40: PERSISTENT 3D TUBES - Total trajectory: 41
+  Pure Env Step 50: goal_dist=0.807, goal_reward=-4.03, total_reward=-4.19
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-3.40307430e-01 -7.57002958e-04  8.50114809e-01]
+  Step 50: goal_dist=0.807, reward=-4.193
+  Step 50 EE position: [-3.40307430e-01 -7.57002958e-04  8.50114809e-01]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 1, Step 50: PERSISTENT 3D TUBES - Total trajectory: 51
+Episode 1, Step 60: PERSISTENT 3D TUBES - Total trajectory: 61
+Episode 1, Step 70: PERSISTENT 3D TUBES - Total trajectory: 71
+Episode 1, Step 80: PERSISTENT 3D TUBES - Total trajectory: 81
+Episode 1, Step 90: PERSISTENT 3D TUBES - Total trajectory: 91
+  Pure Env Step 100: goal_dist=0.787, goal_reward=-3.93, total_reward=-4.07
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.31624159  0.02029107  0.87139776]
+  Step 100: goal_dist=0.787, reward=-4.068
+  Step 100 EE position: [-0.31624159  0.02029107  0.87139776]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 1, Step 100: PERSISTENT 3D TUBES - Total trajectory: 101
+Episode 1, Step 110: PERSISTENT 3D TUBES - Total trajectory: 111
+Episode 1, Step 120: PERSISTENT 3D TUBES - Total trajectory: 121
+Episode 1, Step 130: PERSISTENT 3D TUBES - Total trajectory: 131
+Episode 1, Step 140: PERSISTENT 3D TUBES - Total trajectory: 141
+  Pure Env Step 150: goal_dist=0.838, goal_reward=-4.19, total_reward=-4.34
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.31323412 -0.15926967  0.85530358]
+  Step 150: goal_dist=0.838, reward=-4.337
+  Step 150 EE position: [-0.31323412 -0.15926967  0.85530358]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 1, Step 150: PERSISTENT 3D TUBES - Total trajectory: 151
+Episode 1, Step 160: PERSISTENT 3D TUBES - Total trajectory: 161
+Episode 1, Step 170: PERSISTENT 3D TUBES - Total trajectory: 171
+Episode 1, Step 180: PERSISTENT 3D TUBES - Total trajectory: 181
+Episode 1, Step 190: PERSISTENT 3D TUBES - Total trajectory: 191
+Episode 1 - Total Reward: -785.44, Tracking Reward: -156.35, Avg Reward (last 10): -785.44, Trajectory Points: 200
+  [LEARNING] Noise: 0.1101, LR: 9.95e-06, Buffer: 200, Avg Position Error: 0.7817
+  [SUCCESS] Trajectory recorded: 200 points
+  [MOVEMENT] Total movement: 0.243 units
+  [SUCCESS] Trajectory recorded: 200 points
+  [GOALS] Goals reached this episode: 0
+  [DISTANCE] Current goal distance: 0.825 units
+  Pure Env Step 0: goal_dist=0.859, goal_reward=-4.29, total_reward=-4.44
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.42932848  0.02980355  0.74372564]
+  Step 0: goal_dist=0.859, reward=-4.441
+  Initial EE position: [-0.42932848  0.02980355  0.74372564]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 2, Step 0: PERSISTENT 3D TUBES - Total trajectory: 1
+Episode 2, Step 10: PERSISTENT 3D TUBES - Total trajectory: 11
+Episode 2, Step 20: PERSISTENT 3D TUBES - Total trajectory: 21
+Episode 2, Step 30: PERSISTENT 3D TUBES - Total trajectory: 31
+Episode 2, Step 40: PERSISTENT 3D TUBES - Total trajectory: 41
+  Pure Env Step 50: goal_dist=0.824, goal_reward=-4.12, total_reward=-4.25
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.36179227  0.00508879  0.84493284]
+  Step 50: goal_dist=0.824, reward=-4.246
+  Step 50 EE position: [-0.36179227  0.00508879  0.84493284]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 2, Step 50: PERSISTENT 3D TUBES - Total trajectory: 51
+Episode 2, Step 60: PERSISTENT 3D TUBES - Total trajectory: 61
+Episode 2, Step 70: PERSISTENT 3D TUBES - Total trajectory: 71
+Episode 2, Step 80: PERSISTENT 3D TUBES - Total trajectory: 81
+Episode 2, Step 90: PERSISTENT 3D TUBES - Total trajectory: 91
+  Pure Env Step 100: goal_dist=0.804, goal_reward=-4.02, total_reward=-4.15
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.34904973  0.05300009  0.85258895]
+  Step 100: goal_dist=0.804, reward=-4.148
+  Step 100 EE position: [-0.34904973  0.05300009  0.85258895]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 2, Step 100: PERSISTENT 3D TUBES - Total trajectory: 101
+Episode 2, Step 110: PERSISTENT 3D TUBES - Total trajectory: 111
+Episode 2, Step 120: PERSISTENT 3D TUBES - Total trajectory: 121
+Episode 2, Step 130: PERSISTENT 3D TUBES - Total trajectory: 131
+Episode 2, Step 140: PERSISTENT 3D TUBES - Total trajectory: 141
+  Pure Env Step 150: goal_dist=0.808, goal_reward=-4.04, total_reward=-4.17
+  Current goal: [0.4, 0.2, 0.6], EE pos: [-0.35863384  0.05996794  0.84141542]
+  Step 150: goal_dist=0.808, reward=-4.169
+  Step 150 EE position: [-0.35863384  0.05996794  0.84141542]
+  Current goal: [0.4, 0.2, 0.6]
+Episode 2, Step 150: PERSISTENT 3D TUBES - Total trajectory: 151
+Episode 2, Step 160: PERSISTENT 3D TUBES - Total trajectory: 161
+Episode 2, Step 170: PERSISTENT 3D TUBES - Total trajectory: 171
+Episode 2, Step 180: PERSISTENT 3D TUBES - Total trajectory: 181
+Episode 2, Step 190: PERSISTENT 3D TUBES - Total trajectory: 191
+Episode 2 - Total Reward: -852.07, Tracking Reward: -165.16, Avg Reward (last 10): -818.76, Trajectory Points: 200
+  [LEARNING] Noise: 0.0500, LR: 9.85e-06, Buffer: 400, Avg Position Error: 0.8258
+  [SUCCESS] Trajectory recorded: 200 points
+  [MOVEMENT] Total movement: 0.095 units
+  [SUCCESS] Trajectory recorded: 200 points
+  [GOALS] Goals reached this episode: 0
+  [DISTANCE] Current goal distance: 0.840 units
+
+=== TEST EPISODE COMPLETE ===
+? Single episode test completed successfully!
+? Now testing Genesis cleanup and exit behavior...
+Final average reward: -818.76
+
+? Generating Final Training Evidence...
+? FINAL TRAINING METRICS:
+  Episodes Completed: 2
+  Total Reward - Min: -852.07, Max: -785.44, Mean: -818.76
+  Improvement: -66.63
+? Summary file: training_metrics\training_summary_20250831_082521.json
+? Training results plot saved successfully to: C:\Users\Ritu\Project\total_robotics\genesis_AI_sims\genesis_installation\training_results.png
+? File size: 62506 bytes
+
+=== SINGLE EPISODE TEST COMPLETE ===
+? Skipping final demonstration - testing exit behavior only
+? Focus: Verify Genesis cleanup without hanging
+Final demonstration reward: 0.00
+Final goals maintained as GREEN SPHERES
+
+=== PURE ENVIRONMENT LEARNING VISUALIZATION SUMMARY ===
+[GREEN SPHERES] Dynamic goals: Current and available targets
+[BRIGHT GREEN POINTS] Final trained goal-reaching trajectory (discovered path)
+[BLUE TRAILS] Training exploration trajectories (learning process)
+[COLORED TRAILS] Previous episode exploration attempts (learning history)
+? ALL GOAL-BASED LEARNING - no disappearing targets!
+? PURE DISCOVERY - robot learned through exploration!
+
+=== Final Training Summary ===
+Episodes completed: 2
+Best episode: 1 (reward: -785.44)
+Final 10-episode average: -818.76
+Learning improvement: -33.31
+Final exploration noise: 0.0498
+Final learning rate: 9.85e-06
+
+? TRAINING METRICS SUMMARY:
+  ? Total Reward Statistics:
+    - Min: -852.07
+    - Max: -785.44
+    - Mean: -818.76
+    - Final: -852.07
+    - Improvement: -66.63
+? Training summary saved in: training_metrics/ directory
+
+=== Enhanced training session completed at 2025-08-31 08:25:22.298910 ===
+Log saved to: training_log_20250831_082327.txt
+? Generated plot files: ['training_results.png']
+?? No MP4 video files found in current directory
+? Auto-closing Genesis simulation...

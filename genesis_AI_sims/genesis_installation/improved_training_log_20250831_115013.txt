@@ -1,0 +1,101 @@
+🚀 IMPROVED PURE ENVIRONMENT TRAINING - 2025-08-31 11:50:13.706405
+📝 Log file: improved_training_log_20250831_115013.txt
+🔧 APPLIED FIXES: Tolerance↑, Reward↓, Episodes↑, Exploration↑
+
+======================================================================
+🚀 IMPROVED PURE ENVIRONMENT TRAINING
+🔧 APPLIED IMPROVEMENTS FROM TRAINING ANALYSIS:
+   • Goal tolerance: 0.10m → 0.20m (2x easier)
+   • Episode length: 100 → 300 steps (3x longer)
+   • Reward penalty: -2.0 → -0.5 (4x gentler)
+   • Goal bonus: 100 → 200 points (2x bigger)
+   • Exploration: enhanced noise & slower decay
+   • Curriculum: easy → medium → hard goals
+======================================================================
+🎬 Enhanced visualization setup complete:
+   • Camera position: (2.0, 2.0, 1.5)
+   • Compatible lighting added
+   • Ground plane with material properties
+   • World coordinate frame visible
+   • Genesis 0.3.1 compatible settings
+🤖 Robot loaded with 9 joints
+📚 Curriculum: 20 easy, 26 medium, 18 hard goals
+🏭 Pre-allocating trajectory marker pool...
+⚠️ Trajectory marker pool initialization failed: Scene is already built.
+   Trajectory visualization will use position logging only
+🏭 INDUSTRY-STANDARD TRAJECTORY VISUALIZATION INITIALIZED
+   ✅ Real-time end-effector path tracking
+   ✅ Multi-episode trajectory comparison
+   ✅ Professional goal marker system
+   ✅ Success/failure visual indicators
+   ✅ Color-coded performance analysis
+   ✅ Trajectory efficiency metrics
+   ✅ Pre-allocated trajectory markers: 200
+⚠️ Goal marker creation failed: Scene is already built.
+   Continuing with default goal system...
+🎯 IMPROVED Environment initialized
+📏 Goal tolerance: 0.2m (2x easier)
+⏱️ Episode length: 300 steps (3x longer)
+📚 Curriculum goals: 64 total
+🔴 Goal marker added for visualization
+📊 EPISODE 1 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [-0.15        0.25980762  0.4       ]
+   • Success rate: 0/1
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [-0.15        0.25980762  0.4       ] (dist: 0.448m, level: 1)
+📊 State dimension: 28
+🎮 Action dimension: 9
+🤖 IMPROVED PPO-DDPG Agent initialized on cuda
+📊 Actor LR: 0.0003 (↑), Critic LR: 0.001
+🔍 Exploration: noise=0.3 (↑), decay=0.999 (slower)
+💾 Buffer: 100000 samples (2x larger)
+
+🏃 Starting IMPROVED training for 10 episodes...
+📊 EPISODE 2 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [ 0.2        -0.34641016  0.4       ]
+   • Success rate: 0/1
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [ 0.2        -0.34641016  0.4       ] (dist: 0.360m, level: 1)
+
+📈 Episode 1/10
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+📍 Trajectory Point 20: [0.1980372  0.02486002 0.49215809]
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+📍 Trajectory Point 40: [0.19638873 0.04032628 0.46719179]
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+  Step 50: reward=6.83, dist=0.323m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+📍 Trajectory Point 60: [0.1906257  0.07427007 0.57845036]
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+📍 Trajectory Point 80: [ 0.2000138  -0.01475402  0.40150113]
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+📍 Trajectory Point 100: [0.19922282 0.01707614 0.51258414]
+  Step 100: reward=4.30, dist=0.381m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+📍 Trajectory Point 120: [ 0.20583072 -0.01395488  0.40465893]
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+📍 Trajectory Point 140: [ 0.19689297 -0.00198647  0.52742623]
+⚠️ Trajectory marker pool exhausted, continuing with position tracking
+⚠️ Trajectory marker pool exhausted, continuing with position tracking

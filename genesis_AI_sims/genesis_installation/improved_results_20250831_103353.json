@@ -1,0 +1,40 @@
+{
+  "episode_rewards": [
+    2716.0550254023115,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN
+  ],
+  "goals_reached_per_episode": [
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "total_goals_reached": 8,
+  "success_rate": 80.0,
+  "average_reward": NaN,
+  "best_reward": 2716.0550254023115,
+  "num_episodes": 10,
+  "final_noise": 0.1,
+  "improvements_applied": [
+    "Goal tolerance: 0.10m \u2192 0.20m",
+    "Episode length: 100 \u2192 300 steps",
+    "Reward penalty: -2.0 \u2192 -0.5",
+    "Goal bonus: 100 \u2192 200 points",
+    "Enhanced exploration",
+    "Curriculum learning"
+  ]
+}

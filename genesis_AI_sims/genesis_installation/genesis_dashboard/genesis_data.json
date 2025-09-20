@@ -1,0 +1,79 @@
+{
+  "frame_data": [],
+  "episode_summaries": [],
+  "episode_total_rewards": {
+    "values": [],
+    "min_values": [],
+    "max_values": [],
+    "mean_values": [],
+    "std_values": [],
+    "episodes": []
+  },
+  "episode_tracking_rewards": {
+    "values": [],
+    "min_values": [],
+    "max_values": [],
+    "mean_values": [],
+    "std_values": [],
+    "episodes": []
+  },
+  "step_total_rewards": {
+    "values": [],
+    "min_values": [],
+    "max_values": [],
+    "mean_values": [],
+    "rolling_min": [],
+    "rolling_max": [],
+    "rolling_mean": [],
+    "steps": [],
+    "episodes": []
+  },
+  "step_tracking_rewards": {
+    "values": [],
+    "min_values": [],
+    "max_values": [],
+    "mean_values": [],
+    "rolling_min": [],
+    "rolling_max": [],
+    "rolling_mean": [],
+    "steps": [],
+    "episodes": []
+  },
+  "aggregated_stats": {
+    "total_episodes": 0,
+    "total_steps": 0,
+    "overall_total_reward_stats": {
+      "min": Infinity,
+      "max": -Infinity,
+      "mean": 0.0,
+      "std": 0.0,
+      "sum": 0.0,
+      "count": 0
+    },
+    "overall_tracking_reward_stats": {
+      "min": Infinity,
+      "max": -Infinity,
+      "mean": 0.0,
+      "std": 0.0,
+      "sum": 0.0,
+      "count": 0
+    },
+    "learning_progress": {
+      "initial_performance": 0.0,
+      "final_performance": 0.0,
+      "improvement": 0.0,
+      "best_episode": 0,
+      "best_reward": -Infinity,
+      "worst_episode": 0,
+      "worst_reward": Infinity
+    }
+  },
+  "metadata": {
+    "start_time": "2025-08-31T00:45:05.134798",
+    "simulation_time": 0.0,
+    "physics_steps": 0,
+    "genesis_version": "2024",
+    "status": "running",
+    "window_size": 50
+  }
+}

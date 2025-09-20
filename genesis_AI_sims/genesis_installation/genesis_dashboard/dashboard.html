@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genesis Comprehensive Dashboard</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; padding: 20px; 
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .metrics-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+            margin-bottom: 30px;
+        }
+        .metric-card { 
+            background: rgba(255,255,255,0.15); 
+            padding: 20px; 
+            border-radius: 10px; 
+        }
+        .metric-title { 
+            font-size: 1.2em; 
+            margin-bottom: 10px; 
+            color: #FFD700;
+        }
+        .metric-value { 
+            font-size: 2em; 
+            font-weight: bold; 
+            text-align: center;
+        }
+        .plots-section { 
+            margin-top: 30px; 
+        }
+        .plot-image { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Genesis Comprehensive Dashboard</h1>
+        <p>Real-time training monitoring with Genesis API integration</p>
+    </div>
+    
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <div class="metric-title">📊 Total Episodes</div>
+            <div class="metric-value" id="total-episodes">0</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-title">⚡ Total Steps</div>
+            <div class="metric-value" id="total-steps">0</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-title">🎯 Latest Total Reward</div>
+            <div class="metric-value" id="latest-total">0.00</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-title">🏆 Latest Tracking Reward</div>
+            <div class="metric-value" id="latest-tracking">0.00</div>
+        </div>
+    </div>
+    
+    <div class="plots-section">
+        <h2>📈 Live Training Plots</h2>
+        <img src="plots/episode_total_rewards.png" alt="Episode Total Rewards" class="plot-image" 
+             onerror="this.style.display='none'">
+        <img src="plots/episode_tracking_rewards.png" alt="Episode Tracking Rewards" class="plot-image" 
+             onerror="this.style.display='none'">
+        <img src="plots/step_total_rewards.png" alt="Step Total Rewards" class="plot-image" 
+             onerror="this.style.display='none'">
+        <img src="plots/step_tracking_rewards.png" alt="Step Tracking Rewards" class="plot-image" 
+             onerror="this.style.display='none'">
+        <img src="plots/aggregated_statistics.png" alt="Aggregated Statistics" class="plot-image" 
+             onerror="this.style.display='none'">
+    </div>
+    
+    <script>
+        // Auto-update metrics every 5 seconds
+        function updateMetrics() {
+            fetch('genesis_data.json')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.aggregated_stats) {
+                        document.getElementById('total-episodes').textContent = data.aggregated_stats.total_episodes;
+                        document.getElementById('total-steps').textContent = data.aggregated_stats.total_steps;
+                    }
+                    
+                    if (data.step_total_rewards && data.step_total_rewards.values.length > 0) {
+                        const latestTotal = data.step_total_rewards.values[data.step_total_rewards.values.length - 1];
+                        document.getElementById('latest-total').textContent = latestTotal.toFixed(2);
+                    }
+                    
+                    if (data.step_tracking_rewards && data.step_tracking_rewards.values.length > 0) {
+                        const latestTracking = data.step_tracking_rewards.values[data.step_tracking_rewards.values.length - 1];
+                        document.getElementById('latest-tracking').textContent = latestTracking.toFixed(2);
+                    }
+                })
+                .catch(error => console.log('Update error:', error));
+        }
+        
+        // Update every 5 seconds
+        setInterval(updateMetrics, 5000);
+        updateMetrics(); // Initial load
+    </script>
+</body>
+</html>
+        

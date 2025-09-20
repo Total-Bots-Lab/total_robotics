@@ -1,0 +1,171 @@
+🚀 IMPROVED PURE ENVIRONMENT TRAINING - 2025-08-31 11:46:58.304470
+📝 Log file: improved_training_log_20250831_114658.txt
+🔧 APPLIED FIXES: Tolerance↑, Reward↓, Episodes↑, Exploration↑
+
+======================================================================
+🚀 IMPROVED PURE ENVIRONMENT TRAINING
+🔧 APPLIED IMPROVEMENTS FROM TRAINING ANALYSIS:
+   • Goal tolerance: 0.10m → 0.20m (2x easier)
+   • Episode length: 100 → 300 steps (3x longer)
+   • Reward penalty: -2.0 → -0.5 (4x gentler)
+   • Goal bonus: 100 → 200 points (2x bigger)
+   • Exploration: enhanced noise & slower decay
+   • Curriculum: easy → medium → hard goals
+======================================================================
+🎬 Enhanced visualization setup complete:
+   • Camera position: (2.0, 2.0, 1.5)
+   • Compatible lighting added
+   • Ground plane with material properties
+   • World coordinate frame visible
+   • Genesis 0.3.1 compatible settings
+🤖 Robot loaded with 9 joints
+📚 Curriculum: 20 easy, 26 medium, 18 hard goals
+🏭 INDUSTRY-STANDARD TRAJECTORY VISUALIZATION INITIALIZED
+   ✅ Real-time end-effector path tracking
+   ✅ Multi-episode trajectory comparison
+   ✅ Professional goal marker system
+   ✅ Success/failure visual indicators
+   ✅ Color-coded performance analysis
+   ✅ Trajectory efficiency metrics
+⚠️ Goal marker creation failed: Scene is already built.
+   Continuing with default goal system...
+🎯 IMPROVED Environment initialized
+📏 Goal tolerance: 0.2m (2x easier)
+⏱️ Episode length: 300 steps (3x longer)
+📚 Curriculum goals: 64 total
+🔴 Goal marker added for visualization
+📊 EPISODE 1 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [0.3 0.  0.5]
+   • Success rate: 0/1
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [0.3 0.  0.5] (dist: 0.098m, level: 1)
+📊 State dimension: 28
+🎮 Action dimension: 9
+🤖 IMPROVED PPO-DDPG Agent initialized on cuda
+📊 Actor LR: 0.0003 (↑), Critic LR: 0.001
+🔍 Exploration: noise=0.3 (↑), decay=0.999 (slower)
+💾 Buffer: 100000 samples (2x larger)
+
+🏃 Starting IMPROVED training for 10 episodes...
+📊 EPISODE 2 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [-0.2         0.34641016  0.5       ]
+   • Success rate: 0/1
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [-0.2         0.34641016  0.5       ] (dist: 0.531m, level: 1)
+
+📈 Episode 1/10
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+  Step 50: reward=1.73, dist=0.517m, goals=0, lvl=1, prox=0.0, prog=2.0
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+  Step 100: reward=1.74, dist=0.521m, goals=0, lvl=1, prox=0.0, prog=2.0
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+  Step 150: reward=1.73, dist=0.526m, goals=0, lvl=1, prox=0.0, prog=2.0
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+  Step 200: reward=-0.77, dist=0.521m, goals=0, lvl=1, prox=0.0, prog=-0.5
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+  Step 250: reward=6.76, dist=0.469m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+� TRAJECTORY ANALYSIS - Episode 2:
+   • Points Recorded: 300
+   • Total Distance: 26.528m
+   • Efficiency Score: 0.017
+   • Success: ❌ Goal missed
+  Step 300: reward=1.74, dist=0.519m, goals=0, lvl=1, prox=0.0, prog=2.0
+✅ Episode 1 complete:
+   Total Reward: 435.32
+   Steps: 300
+   Goals Reached: 0
+   Curriculum Level: 1
+   Success Rate: 0.0%
+   Actor Loss: 0.5820
+   Critic Loss: 1.6009
+   Noise Level: 0.2222
+📊 EPISODE 3 INITIALIZED:
+   • Trajectory tracking: ACTIVE
+   • Goal target: [ 0.2        -0.34641016  0.4       ]
+   • Success rate: 0/2
+   • Visualization: Real-time path recording
+🔄 Reset - Goal: [ 0.2        -0.34641016  0.4       ] (dist: 0.360m, level: 1)
+
+📈 Episode 2/10
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+  Step 50: reward=6.80, dist=0.401m, goals=0, lvl=1, prox=5.0, prog=2.0
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+  Step 100: reward=4.29, dist=0.424m, goals=0, lvl=1, prox=5.0, prog=-0.5
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
+⚠️ Trajectory marker creation failed: Scene is already built.
